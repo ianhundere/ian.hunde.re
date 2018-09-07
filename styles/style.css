@@ -4,12 +4,14 @@ html {
 }
 
 body {
-  width: 800px;
+  position: relative;
+  width:80%;
+  margin: 0 auto;
   color: rgb(44, 44, 8);
-  margin: auto;
   background-color: #467226;
   padding: 10px 20px 20px 20px;
   border: 5px solid black;
+  border-radius: 40px;
 } 
 
 footer {
@@ -86,7 +88,7 @@ h2 {
 }
 
 #copyright {
-  font-size: 9px;
+  font-size: 12px;
   color:black
 }
 
@@ -117,7 +119,7 @@ iframe {
 
 .container {
   display: grid;
-  grid-template: repeat(3, auto) / repeat(3, auto);
+  grid-template: repeat(3, auto) / repeat(3, 33.3%);
   grid-gap: 2.5px;
   padding-bottom: 20px;
   text-align: center;
@@ -129,6 +131,7 @@ iframe {
   align-items: center;
   font-size: 2em;
   color: #ffeead;
+  border-radius: 40px;
 }
 
 .container > div:nth-child(1n) {
@@ -161,4 +164,16 @@ iframe {
 
 img {
   border-radius: 40px;
+}
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:40px;
+width: 70%;
 }
