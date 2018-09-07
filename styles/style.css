@@ -1,22 +1,159 @@
 html {
-  font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
   background-color: #4B5444;
+  background-image: linear-gradient(to bottom, rgba(12, 131, 18, 0.5), rgba(0,0,255,0.5)), url("../images/background.jpg");
 }
-h1 {
-  font-size: 60px;
+
+body {
+  width: 800px;
+  color: rgb(44, 44, 8);
+  margin: auto;
+  background-color: #467226;
+  padding: 10px 20px 20px 20px;
+  border: 5px solid black;
+} 
+
+footer {
   text-align: center;
 }
 
-p, li {
-  font-size: 16px;    
-  line-height: 2;
-  letter-spacing: 1px;
+#topNavi {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px;
+  border-color: rgb(165, 165, 30);
+	vertical-align: top;
+	font-size: 18px;
+	width: auto;
+	height: auto;
+	display: inline;
+  padding: none;
 }
-body {
-  width: 600px;
-  margin: 0 auto;
+
+#topNavi a {
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	font-size: 24px;
+	color: black;
+	background-color: #467226;
+	width: auto;
+  height: auto;
+  text-decoration: none;
+}
+
+ul { 
+  display: table; 
+  margin: auto;
+}
+
+#hover:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.highlight{
+  display: none;
+  text-align: center;
+  background: rgba(255, 230, 0, 0.5);
+  padding: 1px 5px;
+  line-height: 1.7;
+  border-radius: 40px;
+}
+
+.hundere {
+  margin: 0;    
+  position: absolute;
+}
+
+#hundere {
+  display: none;
+  margin: 0;    
+  position: absolute;
+}
+
+.center-fit {
+  display: grid;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  margin-top: -20px;
+  padding: 20px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	font-size: 24px;
+  text-align: center;
+}
+
+#copyright {
+  font-size: 9px;
+  color:black
+}
+
+iframe {
+  display:block;
+  width: 500px;
+  height: 347px;
+  margin: auto;
   background-color: #467226;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+  padding-bottom: 20px;
+}
+
+#largeTEXT {
+	width: 100%;
+  text-align: center;
+  margin: 20px;
+  padding-top: 5px;
+}
+
+#largeTEXT a {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#0a4e21;
+	text-decoration: none;
+	text-align: center;
+  font-size: 60px;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(3, auto);
+  grid-gap: 2.5px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.container > div {
+  display: inline-table;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #418b3f;	
+}
+
+.container > div:nth-child(2n) {
+  background-color: #6e924c;
+}
+
+#rotating-item-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.rotating-item {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-height: 100vh;
+}
+
+.imgbox {
+  display: grid;
+  height: 365px;
 }

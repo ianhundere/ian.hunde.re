@@ -1,60 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type='text/css'>
-      <link href="styles/style.css" rel="stylesheet" type="text/css">
-      <meta charset="utf-8">
-      <title>Look at my studio!</title>
-      <style>
-        * {
-        margin: 0;
-        padding: 0;
-        }
-        .imgbox {
-        display: grid;
-        height: 100%;
-        }
-        .center-fit {
-        max-width: 100%;
-        max-height: 100vh;
-        margin: auto;
-        }
-        ul { display:table; margin:0 auto;}
-      </style>
-    </head>          
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,700normal,700italic,400italic"/>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="author" content="ian hundere">
+    <meta name="description" content="a place to learn more about me, ian hundere, and the things that i do.">
+    <title>home / ianhundere.com</title>  
+  </head>          
   <body>
-    <center><h1>hello and welcome</h1></center>
-    <div class="imgbox">
-      <img class="center-fit" src="images/studio-pic.jpg" 
-      alt="An image of my studio: lots of various hardware boxes.">
-    </div>
-    <center><p><strong>below is a list of my many boxes of sound</strong></p><center/>
-    <br>
-      <ul> 
-        <li>monomachine</li>
-        <li>carbon</li>
-        <li>digitakt</li> 
-        <li>ob6</li>
-        <li>blofeld</li>
-        <li>nord drum 2</li>
-        <li>adx1</li>
-        <li>kaleidoloop</li>
-        <li>multiclock</li>   
-        <li>qupac</li>
-        <li>ar84</li>
-        <li>da3000</li>
-        <li>rms755</li>
-        <li>bim</li>   
-        <li>biscuit</li>
-        <li>grid256</li>
-        <li>push1</li>
-        <li>launch control</li>
-    </ul>
-    <br>
-    <div class="contentcontainer med left" style="margin-left: -50px;"><p>click below to listen<strong>
-      <br>
-      <a href="https://clyp.it/user/3b2ltmbv">my tunes</a></strong></p>
-    </div>    
-    <br>
+    <header>
+      <nav class="#nav-line" id="topNavi">
+        <h1 id="hundere">
+          <a href="./index.html">ian hundere</a>
+        </h1>
+        <ul> |
+          <a id="hover" href="work.html">work</a> |
+          <a id="hover" href="music.html">music</a> |
+          <a id="hover" href="about.html">about</a> |
+          <a id="hover" href="contact.html">contact</a> |
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="highlight">
+        hello and welcome
+      </h2>
+      <img class="center-fit" src="images/me.jpg" alt="a picture of ian" width="347" height="280">
+    </main>
+    <footer id="copyright">
+      &copy;ian hundere 2018
+    </footer>
   </body>
+  <script type="text/javascript" src="./scripts/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
 </html>
