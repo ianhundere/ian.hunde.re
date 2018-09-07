@@ -157,3 +157,7 @@ iframe {
   display: grid;
   height: 365px;
 }
+
+img {
+  border-radius: 40px;
+}
