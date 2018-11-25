@@ -103,7 +103,7 @@ class Main extends React.Component {
 					<p>
 						Born and raised in Texas, I often found myself up late at night tinkering about on the computer
 						to either install the latest distro of Linux or meeting new people on IRC. I left Texas for my
-						ungrad in Victoria, BC, Canada where I received a Bachelors of Arts in 20th Century American
+						undergrad in Victoria, BC, Canada where I received a Bachelors of Arts in 20th Century American
 						History (from a Canadian perspective). I came back south to connect with old friends and landed
 						a job at Apple Inc. in the summer of 2007 just as all Apple employees were receiving their first
 						iPhones. I worked there for a few years until I made the choice to go back to school to pursue a
