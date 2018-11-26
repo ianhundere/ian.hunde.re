@@ -5,12 +5,22 @@ const Footer = (props) => (
 	<footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
 		<ul class="icons">
 			<li>
-				<a href="https://github.com/ianhundere" target="_blank" class="icon fa-github">
+				<a
+					href="https://github.com/ianhundere"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="icon fa-github"
+				>
 					<span class="label">GitHub</span>
 				</a>
 			</li>
 			<li>
-				<a href="https://www.linkedin.com/in/ian-hundere/" target="_blank" class="icon fa-linkedin">
+				<a
+					href="https://www.linkedin.com/in/ianhundere/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="icon fa-linkedin"
+				>
 					<span class="label">Linked-In</span>
 				</a>
 			</li>
@@ -18,6 +28,7 @@ const Footer = (props) => (
 				<a
 					href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ianhundere@gmail.com"
 					target="_blank"
+					rel="noopener noreferrer"
 					class="icon fa-envelope"
 				>
 					<span class="label">Email</span>

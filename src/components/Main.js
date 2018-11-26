@@ -36,18 +36,22 @@ class Main extends React.Component {
 					<h1 className="major">Projects</h1>
 					<h2 align="center">GeoMindr</h2>
 					<span className="main image">
-						<a href="https://geomindr.com" target="_blank">
-							<img src={project1} alt="" />
+						<a href="https://geomindr.com" target="_blank" rel="noopener noreferrer">
+							<img src={project1} alt="Link to GeoMindr.com" />
 						</a>
 					</span>
 					<p>
 						A backend web app created with Node, PostgreSQL, Express, Javascript, CSS, and HTML that allows
 						users to text a{' '}
-						<a href="https://www.twilio.com/learn/twilio-101/what-is-twilio" target="_blank">
+						<a
+							href="https://www.twilio.com/learn/twilio-101/what-is-twilio"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Twilio
 						</a>{' '}
 						number using{' '}
-						<a href="https://ifttt.com/about" target="_blank">
+						<a href="https://ifttt.com/about" target="_blank" rel="noopener noreferrer">
 							IFTTT
 						</a>{' '}
 						to record a reminder and their coordinates. This reminder gets saved in a database to be
@@ -63,8 +67,8 @@ class Main extends React.Component {
 					</ul>
 					<h2 align="center">Parity</h2>
 					<span className="main image" height="150">
-						<a href="https://paritygame.club" target="_blank">
-							<img src={project2} alt="" />
+						<a href="https://paritygame.club" target="_blank" rel="noopener noreferrer">
+							<img src={project2} alt="Link to the Parity Memory Game" />
 						</a>
 					</span>
 					<p>
@@ -72,11 +76,12 @@ class Main extends React.Component {
 						based on pictures and sounds pulled randomly from two APIs (<a
 							href="https://freesound.org/"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							Free Sound
 						</a>{' '}
 						and{' '}
-						<a href="https://https://unsplash.com/.org/" target="_blank">
+						<a href="https://https://unsplash.com/.org/" target="_blank" rel="noopener noreferrer">
 							Unsplash Image
 						</a>) making every gaming experience unique.
 					</p>
@@ -112,7 +117,7 @@ class Main extends React.Component {
 					<img className="image left" src={fam} alt="my family" />
 					<p>
 						Just as I was about to graduate, I met my wife and other half. She has kept me sane ever since.
-						We have two beautiful children whom we do our best to keep them curious and motivated.
+						We have two beautiful children whom we do our best to keep curious and motivated.
 					</p>
 					<br />
 					<span className="main">
@@ -125,15 +130,26 @@ class Main extends React.Component {
 						range of client needs.
 					</p>
 					<img className="image left" src={bike} height="150" alt="bicycle" />
-					<img className="image right" src={studio} height="150" alt="music studio" />
+					<img className="image right" src={studio} alt="music studio" />
 					<p>
-						When I'm not with my family or coding, I like to go on long bike rides or make video game sounds
+						When I'm not coding or with my family, I like to go on long bike rides or make video game sounds
 						late into the night (&nbsp;
-						<a href="https://grassnose.bandcamp.com/" alt="bandcamp link" target="_blank">
+						<a
+							className="align-center"
+							href="https://grassnose.bandcamp.com/"
+							alt="bandcamp link"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<span className="icon fa-bandcamp" />
 						</a>{' '}
 						/ {' '}
-						<a href="https://soundcloud.com/grassnose" alt="soundcloud link" target="_blank">
+						<a
+							href="https://soundcloud.com/grassnose"
+							alt="soundcloud link"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<span className="icon fa-soundcloud" />
 						</a>{' '}
 						).

@@ -7,7 +7,7 @@ const Header = (props) => (
 		<div className="logo">
 			<span className="icon fa-code" />
 		</div>
-		<div className="content">
+		<div className="#">
 			<div className="inner">
 				<h1>Ian Hundere</h1>
 				<p>Software developer</p>
