@@ -36,8 +36,13 @@ const Footer = (props) => (
 			</li>
 		</ul>
 		<p className="copyright">
-			&copy; Ian Hundere. Design: <a href="https://html5up.net">HTML5 UP</a>. Built with:{' '}
-			<a href="https://www.gatsbyjs.org/">Gatsby.js</a>
+			&copy; Ian Hundere. Design:{' '}
+			<a href="https://html5up.net" target="_blank" rel="noopener noreferrer">
+				HTML5 UP
+			</a>. Built with:{' '}
+			<a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">
+				Gatsby.js
+			</a>
 		</p>
 	</footer>
 );
