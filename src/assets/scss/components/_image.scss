@@ -56,7 +56,9 @@
 	&.fit {
 		display: block;
 		margin: 0 0 _size(element-margin) 0;
-		width: 100%;
+		width: 70%;
+		max-height: 800px;
+		justify-content: center;
 
 		img {
 			width: 100%;

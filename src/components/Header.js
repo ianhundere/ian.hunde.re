@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import resume from '../images/IanHundereResume.pdf';
 
 const Header = (props) => (
 	<header id="header" style={props.timeout ? { display: 'none' } : {}}>
-		<div className="logo">
-			<span className="icon fa-code" />
-		</div>
 		<div className="#">
 			<div className="inner">
 				<h1>Ian Hundere</h1>

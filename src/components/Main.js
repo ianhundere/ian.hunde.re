@@ -5,6 +5,7 @@ import project1 from '../images/geomindr.gif';
 import project2 from '../images/parity.gif';
 import project3 from '../images/eggy.gif';
 import project4 from '../images/Scale-o-Rama.gif';
+import project5 from '../images/oblique.gif';
 import me from '../images/ianhundere.jpg';
 import fam from '../images/fam.jpeg';
 import bike from '../images/bike.jpg';
@@ -41,13 +42,13 @@ class Main extends React.Component {
 							GeoMindr
 						</a>
 					</h2>
-					<span className="main image">
+					<div align="center">
 						<a href="https://geomindr.com" target="_blank" rel="noopener noreferrer">
-							<img src={project1} alt="Link to GeoMindr.com" />
+							<img className="image fit" src={project1} alt="Link to GeoMindr.com" />
 						</a>
-					</span>
+					</div>
 					<p>
-						A backend web app created with Node.js, Express.js, PostgreSQL, Javascript, CSS, and HTML that
+						A backend web app created with Node.js, Express.js, PostgreSQL, JavaScript, CSS, and HTML that
 						allows users to text a{' '}
 						<a
 							href="https://www.twilio.com/learn/twilio-101/what-is-twilio"
@@ -62,15 +63,17 @@ class Main extends React.Component {
 						</a>{' '}
 						to then record a reminder and their GPS coordinates. This reminder gets saved in a database to
 						be accessible at a later time either via the web interface or by messaging the same number to
-						get a list of reminders.
+						get a list of reminders. <a href="https://www.npmjs.com/package/bcrypt" target="_blank" rel="noopener noreferrer">Bcrypt </a>
+						was used to hash the user's password while
+						<a href="https://www.npmjs.com/package/express-session" target="_blank" rel="noopener noreferrer"> express-session </a>
+						was used to keep track of whether the user was still logged in or not.
 					</p>
 					<h3>Features</h3>
-					<span className="icon fa-postgres" />
 					<ul>
 						<li>Full SMS support through Twilio</li>
 						<li>Create, retrieve, update, and delete reminders via SMS or web interface</li>
 						<li>View public reminders via web interface</li>
-						<section align="right">
+						<div align="right">
 							<a
 								href="https://github.com/ianhundere/GeoMindr"
 								target="_blank"
@@ -80,7 +83,7 @@ class Main extends React.Component {
 							><a href="https://github.com/ianhundere/GeoMindr" target="_blank"
 								rel="noopener noreferrer"
 								alt="Link to GeoMindr Repo"> <em>GitHub Repo</em></a>
-							</a></section>
+							</a></div>
 					</ul>
 					<hr></hr>
 					<h2 align="center">
@@ -88,13 +91,11 @@ class Main extends React.Component {
 							Parity
 						</a>
 					</h2>
-					<span className="main image" height="150">
-						<a href="https://paritygame.club" target="_blank" rel="noopener noreferrer">
-							<img src={project2} alt="Link to the Parity Memory Game" />
-						</a>
-					</span>
+					<a href="https://paritygame.club" target="_blank" rel="noopener noreferrer">
+						<img className="image main" src={project2} alt="Link to the Parity Memory Game" />
+					</a>
 					<p>
-						A front-end memory game created with Javascript, CSS, and HTML where the user matches tiles
+						A front-end memory game created with JavaScript, CSS, and HTML where the user matches tiles
 						based on pictures and sounds pulled randomly from two APIs (<a
 							href="https://freesound.org/"
 							target="_blank"
@@ -113,7 +114,7 @@ class Main extends React.Component {
 						<li>Progressive level system that allows users to play 5 levels of increasing difficulty</li>
 						<li>Match either image or sound; excellent for accessibility</li>
 						<li>Change between themes after each level completion or failure</li>
-						<section align="right">
+						<div align="right">
 							<a
 								href="https://github.com/ianhundere/parity-memory-game"
 								target="_blank"
@@ -122,41 +123,42 @@ class Main extends React.Component {
 								alt="Link to Parity Memory Game Repo"
 							><a href="https://github.com/ianhundere/parity-memory-game" target="_blank"
 								rel="noopener noreferrer" alt="Link to Parity Memory Game Repo"> <em>GitHub Repo</em></a>
-							</a></section>
+							</a></div>
 					</ul>
 					<hr></hr>
-					<h2 align="center">
-						Scales<sub><strong>-O-</strong></sub><br></br>Rama
-					</h2>
-					<span className="main image" height="150">
-						<img src={project4} alt="Gif of Scale-O-Rama" />
-					</span>
+					<h2 align="center"><a href="https://oblique-strategies-gpbyfeotj.now.sh/" target="_blank" rel="noopener noreferrer">
+						Oblique Strategies</a></h2><a href="https://oblique-strategies-gpbyfeotj.now.sh/" target="_blank" rel="noopener noreferrer">
+						<div align="center">
+							<img className="image fit" src={project5} alt="Gif of Oblique Strategies" />
+						</div>
+					</a>
 					<p>
-						A simple python app that allows users to find scales based on inputted notes or randomly choose scales from a variety of musical modes.
+						A very simple front-end project that displays, Oblique Strategies; a card-based method for inspiring artists created by Brian Eno and Peter Schmidt.
 					</p>
 					<p />
 					<h3>Features</h3>
 					<ul>
-						<li>Scales randomly chosen from major, minor, dorian, phrygian, lydian, mixolydian, aeolian, and locrian scales</li>
-						<li>The itertools module is used to flatten the dictionary of scales into values which then allow the scales to be randomized</li>
-						<li>If the incorrect option is chosen, the user is alerted to enter either "lookup" or "random"</li>
-						<section align="right">
+						<li>An info modal that explains what Oblique Strategies is</li>
+						<li>Each strategy is coupled with an image from <a
+							href="https://imgur.com/"
+							target="_blank"
+							rel="noopener noreferrer">imgur</a> </li>
+						<li>Strategies / images are randomized</li>
+						<div align="right">
 							<a
 								href="https://github.com/ianhundere/Scales-O-Rama"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="icon fa-github"
-								alt="Link to Scales-O-Rama Repo"
-							><a href="https://github.com/ianhundere/Scales-O-Rama" target="_blank"
-								rel="noopener noreferrer" alt="Link to Scales-O-Rama Repo"> <em>GitHub Repo</em></a>
-							</a></section>
+								alt="Link to Eggy Game Repo"
+							><a href="https://github.com/ianhundere/oblique-strategies" target="_blank"
+								rel="noopener noreferrer" alt="Link to Oblique Strategies"> <em>GitHub Repo</em></a>
+							</a></div>
 					</ul>
 					<hr></hr>
 					<h2 align="center">
 						Eggy <sup>Mc</sup>Eggy <br></br><sup>and</sup><sub>Friends</sub></h2>
-					<span className="main image" height="150">
-						<img src={project3} alt="Gif of Eggy Game" />
-					</span>
+					<img className="image main" src={project3} alt="Gif of Eggy Game" />
 					<p>
 						A simple shoot'em up game created using Python and Pygame.
 					</p>
@@ -166,7 +168,7 @@ class Main extends React.Component {
 						<li>Ability to travel in all 2D directions (up, down, left, and right)</li>
 						<li>Splash screen with instructions on how to play</li>
 						<li>A score counter / multiple lives</li>
-						<section align="right">
+						<div align="right">
 							<a
 								href="https://github.com/ianhundere/Scales-O-Rama"
 								target="_blank"
@@ -175,7 +177,32 @@ class Main extends React.Component {
 								alt="Link to Eggy Game Repo"
 							><a href="https://github.com/ianhundere/Scales-O-Rama" target="_blank"
 								rel="noopener noreferrer" alt="Link to Eggy Game Repo"> <em>GitHub Repo</em></a>
-							</a></section>
+							</a></div>
+					</ul>
+					<hr></hr>
+					<h2 align="center">
+						Scales<sub><strong>-O-</strong></sub><br></br>Rama
+					</h2>
+					<img className="main image" src={project4} alt="Gif of Scale-O-Rama" />
+					<p>
+						A simple python app that allows users to find scales based on inputted notes or randomly choose scales from a variety of musical modes.
+					</p>
+					<p />
+					<h3>Features</h3>
+					<ul>
+						<li>Scales randomly chosen from major, minor, dorian, phrygian, lydian, mixolydian, aeolian, and locrian scales</li>
+						<li>The itertools module is used to flatten the dictionary of scales into values which then allow the scales to be randomized</li>
+						<li>If the incorrect option is chosen, the user is alerted to enter either "lookup" or "random"</li>
+						<div align="right">
+							<a
+								href="https://github.com/ianhundere/Scales-O-Rama"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="icon fa-github"
+								alt="Link to Scales-O-Rama Repo"
+							><a href="https://github.com/ianhundere/Scales-O-Rama" target="_blank"
+								rel="noopener noreferrer" alt="Link to Scales-O-Rama Repo"> <em>GitHub Repo</em></a>
+							</a></div>
 					</ul>
 					{close}
 				</article >
@@ -188,30 +215,31 @@ class Main extends React.Component {
 				>
 					<h1 className="major">About</h1>
 					<section>
-						<img className="image right" src={me} alt="ian hundere" />
+						<img className="image main" src={me} alt="ian hundere" />
 					</section>
 					<p>
 						Born and raised in Texas, I often found myself up late at night tinkering about on the computer
 						to either install the latest distro of Linux or meet new people on IRC. I left Texas for my
-						undergrad in Victoria, BC, Canada where I received a Bachelors of Arts in 20th Century American
+						undergrad in Victoria, BC, Canada, where I received a Bachelor of Arts in 20th Century American
 						History (from a Canadian perspective). I came back south to connect with old friends and landed
 						a job at Apple Inc. in the summer of 2007, just as all Apple employees were receiving their
 						free iPhones. I worked there for a few years until I made the choice to go back to school to
-						pursue a Masters in Education.
+						pursue a master's in education.
 					</p>
 					<img className="image left" src={fam} alt="my family" />
 					<p>
 						Right before I graduated, I met my wife and other half. She has kept me sane ever since.
-						We have two beautiful children whom we do our best to keep curious and motivated.
+						We have two beautiful children, whom we do our best to keep curious and motivated.
 					</p>
-					<br />
-					<span className="main">
-						<img className="image right" src={code} alt="screen of code" />
-					</span>
+					<img className="image right" src={code} alt="screen of code" />
 					<p>
-						After a gratifying run in education, both as a teacher and an academic tech coach, I realized
-						how powerful technology could be in changing lives. Now, as a developer, I am excited to be at
-						the forefront in creating innovative tools to allow others to work more effectively.
+						After a gratifying run in education, both as a teacher and an
+							academic tech coach (<a
+							href="https://www.youtube.com/watch?v=Uc2CcrMO1W8"
+							target="_blank"
+							rel="noopener noreferrer"
+						>video portfolio</a>), I realized how powerful technology could be in changing lives. Now, as a developer, I am excited to be at
+						the forefront of creating innovative tools that add real value to people's lives.
 					</p>
 					<img className="image left" src={bike} height="150" alt="bicycle" />
 					<img className="image right" src={studio} alt="music studio" />
