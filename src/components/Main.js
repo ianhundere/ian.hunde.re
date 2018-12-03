@@ -38,9 +38,7 @@ class Main extends React.Component {
 				>
 					<h1 className="major">Projects</h1>
 					<h2 align="center">
-						<a href="https://geomindr.com" target="_blank" rel="noopener noreferrer">
-							GeoMindr
-						</a>
+						GeoMindr
 					</h2>
 					<div align="center">
 						<a href="https://geomindr.com" target="_blank" rel="noopener noreferrer">
@@ -73,7 +71,16 @@ class Main extends React.Component {
 						<li>Full SMS support through Twilio</li>
 						<li>Create, retrieve, update, and delete reminders via SMS or web interface</li>
 						<li>View public reminders via web interface</li>
-						<div align="right">
+						<div align="right"><a
+							href="https://geomindr.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="icon fa-laptop"
+							alt="Link to GeoMindr"
+						><a href="https://geomindr.com" target="_blank"
+							rel="noopener noreferrer"
+							alt="Link to GeoMindr"> <em>Live Demo</em></a>
+						</a><strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
 							<a
 								href="https://github.com/ianhundere/GeoMindr"
 								target="_blank"
@@ -87,9 +94,7 @@ class Main extends React.Component {
 					</ul>
 					<hr></hr>
 					<h2 align="center">
-						<a href="https://paritygame.club" target="_blank" rel="noopener noreferrer">
-							Parity
-						</a>
+						Parity
 					</h2>
 					<a href="https://paritygame.club" target="_blank" rel="noopener noreferrer">
 						<img className="image main" src={project2} alt="Link to the Parity Memory Game" />
@@ -114,7 +119,16 @@ class Main extends React.Component {
 						<li>Progressive level system that allows users to play 5 levels of increasing difficulty</li>
 						<li>Match either image or sound; excellent for accessibility</li>
 						<li>Change between themes after each level completion or failure</li>
-						<div align="right">
+						<div align="right"><a
+							href="https://paritygame.club"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="icon fa-laptop"
+							alt="Link to Parity"
+						><a href="https://paritygame.club" target="_blank"
+							rel="noopener noreferrer"
+							alt="Link to Parity"> <em>Live Demo</em></a>
+						</a><strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
 							<a
 								href="https://github.com/ianhundere/parity-memory-game"
 								target="_blank"
@@ -126,8 +140,9 @@ class Main extends React.Component {
 							</a></div>
 					</ul>
 					<hr></hr>
-					<h2 align="center"><a href="https://oblique-strategies-gpbyfeotj.now.sh/" target="_blank" rel="noopener noreferrer">
-						Oblique Strategies</a></h2><a href="https://oblique-strategies-gpbyfeotj.now.sh/" target="_blank" rel="noopener noreferrer">
+					<h2 align="center">
+						Oblique Strategies</h2>
+					<a href="https://oblique-strategies-gpbyfeotj.now.sh/" target="_blank" rel="noopener noreferrer">
 						<div align="center">
 							<img className="image fit" src={project5} alt="Gif of Oblique Strategies" />
 						</div>
@@ -145,6 +160,16 @@ class Main extends React.Component {
 							rel="noopener noreferrer">imgur</a> </li>
 						<li>Strategies / images are randomized</li>
 						<div align="right">
+							<a
+								href="https://oblique-strategies-gpbyfeotj.now.sh/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="icon fa-laptop"
+								alt="Link to Oblique Strategies"
+							><a href="https://oblique-strategies-gpbyfeotj.now.sh/" target="_blank"
+								rel="noopener noreferrer"
+								alt="Link to Oblique Strategies"> <em>Live Demo</em></a>
+							</a><strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
 							<a
 								href="https://github.com/ianhundere/Scales-O-Rama"
 								target="_blank"
@@ -169,6 +194,7 @@ class Main extends React.Component {
 						<li>Splash screen with instructions on how to play</li>
 						<li>A score counter / multiple lives</li>
 						<div align="right">
+
 							<a
 								href="https://github.com/ianhundere/Scales-O-Rama"
 								target="_blank"

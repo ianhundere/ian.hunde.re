@@ -5,7 +5,7 @@ import resume from '../images/IanHundereResume.pdf';
 
 const Header = (props) => (
 	<header id="header" style={props.timeout ? { display: 'none' } : {}}>
-		<div className="#">
+		<div className="content">
 			<div className="inner">
 				<h1>Ian Hundere</h1>
 				<p>Software Developer</p>
