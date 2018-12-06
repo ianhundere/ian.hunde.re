@@ -216,7 +216,7 @@ class Main extends React.Component {
 					<p />
 					<h3>Features</h3>
 					<ul>
-						<li>Scales randomly chosen from major, minor, dorian, phrygian, lydian, mixolydian, aeolian, and locrian scales</li>
+						<li>Scales randomly chosen from major, minor, dorian, phrygian, lydian, mixolydian, and locrian scales</li>
 						<li>The itertools module is used to flatten the dictionary of scales into values which then allow the scales to be randomized</li>
 						<li>If the incorrect option is chosen, the user is alerted to enter either "lookup" or "random"</li>
 						<div align="right">
