@@ -53,8 +53,9 @@ class Main extends React.Component {
             </a>
           </div>
           <p>
-            A backend web app created with Node.js, Express.js, PostgreSQL,
-            JavaScript, CSS, and HTML that allows users to text a{' '}
+            A full-stack web app with an emphasis on the backend created with
+            Node.js, Express.js, PostgreSQL, JavaScript, CSS, and HTML that
+            allows users to text a{' '}
             <a
               href="https://www.twilio.com/learn/twilio-101/what-is-twilio"
               target="_blank"
