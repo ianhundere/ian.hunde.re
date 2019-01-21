@@ -38,7 +38,7 @@ class Main extends React.Component {
 					style={{ display: 'none' }}
 				>
 					<h1 className="major">Projects</h1>
-					<h2 align="center">GeoMindr</h2>
+					<h2 align="center">Ran-Jam</h2>
 					<div align="center">
 						<a href="https://geomindr.com" target="_blank" rel="noopener noreferrer">
 							<img className="image fit" src={project1} alt="Link to GeoMindr.com" />
