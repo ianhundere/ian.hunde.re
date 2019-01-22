@@ -40,29 +40,29 @@ class Main extends React.Component {
 					<h1 className="major">Projects</h1>
 					<h2 align="center">Ran-Jam</h2>
 					<div align="center">
-						<a href="https://geomindr.com" target="_blank" rel="noopener noreferrer">
-							<img className="image fit" src={project1} alt="Link to GeoMindr.com" />
+						<a href="https://ran-jam.club" target="_blank" rel="noopener noreferrer">
+							<img className="image fit" src={project1} alt="Link to https://ran-jam.club" />
 						</a>
 					</div>
 					<p>
 						A full-stack web app with an emphasis on the backend created with Node.js, Express.js,
-						PostgreSQL, JavaScript, CSS, and HTML that allows users to text a{' '}
+						PostgreSQL, JavaScript, CSS, and HTML that allows users to text a
 						<a
 							href="https://www.twilio.com/learn/twilio-101/what-is-twilio"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							Twilio
-						</a>{' '}
-						number using{' '}
+						</a>
+						number using
 						<a href="https://ifttt.com/about" target="_blank" rel="noopener noreferrer">
 							IFTTT
-						</a>{' '}
+						</a>
 						to then record a reminder and their GPS coordinates. This reminder gets saved in a database to
 						be accessible at a later time either via the web interface or by messaging the same number to
-						get a list of reminders.{' '}
+						get a list of reminders.
 						<a href="https://www.npmjs.com/package/bcrypt" target="_blank" rel="noopener noreferrer">
-							Bcrypt{' '}
+							Bcrypt
 						</a>
 						was used to hash the user's password while
 						<a
@@ -70,8 +70,7 @@ class Main extends React.Component {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{' '}
-							express-session{' '}
+							express-session
 						</a>
 						was used to keep track of whether the user was still logged in or not.
 					</p>
@@ -82,37 +81,35 @@ class Main extends React.Component {
 						<li>View public reminders via web interface</li>
 						<div align="right">
 							<a
-								href="https://geomindr.com"
+								href="https://ran-jam.club"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="icon fa-laptop"
-								alt="Link to GeoMindr"
+								alt="Link to Ran-Jam"
 							>
 								<a
-									href="https://geomindr.com"
+									href="https://ran-jam.club"
 									target="_blank"
 									rel="noopener noreferrer"
-									alt="Link to GeoMindr"
+									alt="Link to Ran-Jam"
 								>
-									{' '}
 									<em>Live Demo</em>
 								</a>
 							</a>
 							<strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
 							<a
-								href="https://github.com/ianhundere/GeoMindr"
+								href="https://github.com/ianhundere/Ran-Jam"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="icon fa-github"
-								alt="Link to GeoMindr Repo"
+								alt="Link to Ran-Jam Repo"
 							>
 								<a
-									href="https://github.com/ianhundere/GeoMindr"
+									href="https://github.com/ianhundere/Ran-Jam"
 									target="_blank"
 									rel="noopener noreferrer"
-									alt="Link to GeoMindr Repo"
+									alt="Link to Ran-Jam Repo"
 								>
-									{' '}
 									<em>GitHub Repo</em>
 								</a>
 							</a>
@@ -206,15 +203,17 @@ class Main extends React.Component {
 					</a>
 					<p>
 						A front-end memory game created with JavaScript, CSS, and HTML where the user matches tiles
-						based on pictures and sounds pulled randomly from two APIs (
-						<a href="https://freesound.org/" target="_blank" rel="noopener noreferrer">
+						based on pictures and sounds pulled randomly from two APIs (<a
+							href="https://freesound.org/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Free Sound
 						</a>{' '}
 						and{' '}
 						<a href="https://https://unsplash.com/.org/" target="_blank" rel="noopener noreferrer">
 							Unsplash Image
-						</a>
-						) making every gaming experience unique.
+						</a>) making every gaming experience unique.
 					</p>
 					<p />
 					<h3>Features</h3>
@@ -266,8 +265,11 @@ class Main extends React.Component {
 						<img className="image main" src={project6} alt="Link to React-Cital Piano" />
 					</a>
 					<p>
-						A front-end synthesizer built using React and (
-						<a href="http://tonejs.github.io/" target="_blank" rel="noopener noreferrer">
+						A front-end synthesizer built using React and (<a
+							href="http://tonejs.github.io/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Tone.js
 						</a>
 						). The user is given 2 octaves to play with as well as sheet music and a metronome to better
@@ -488,8 +490,11 @@ class Main extends React.Component {
 					</p>
 					<img className="image right" src={code} alt="screen of code" />
 					<p>
-						After a gratifying run in education, both as a teacher and an academic tech coach (
-						<a href="https://www.youtube.com/watch?v=Uc2CcrMO1W8" target="_blank" rel="noopener noreferrer">
+						After a gratifying run in education, both as a teacher and an academic tech coach (<a
+							href="https://www.youtube.com/watch?v=Uc2CcrMO1W8"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							video portfolio
 						</a>
 						), I realized how powerful technology could be in changing lives. Now, as a developer, I am
