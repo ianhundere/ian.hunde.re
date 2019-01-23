@@ -7,6 +7,8 @@ import project3 from '../images/eggy.gif';
 import project4 from '../images/Scale-o-Rama.gif';
 import project5 from '../images/oblique.gif';
 import project6 from '../images/react-cital-piano.gif';
+import project7 from '../images/ran-jam.gif';
+
 import me from '../images/ianhundere.jpg';
 import fam from '../images/fam.jpeg';
 import bike from '../images/bike.jpg';
@@ -41,13 +43,12 @@ class Main extends React.Component {
 					<h2 align="center">Ran-Jam</h2>
 					<div align="center">
 						<a href="https://ran-jam.club" target="_blank" rel="noopener noreferrer">
-							<img className="image fit" src={project1} alt="Link to https://ran-jam.club" />
+							<img className="image fit" src={project7} alt="Link to https://ran-jam.club" />
 						</a>
 					</div>
 					<p>
 						A full-stack web app with an emphasis on the backend created with Node.js, Express.js,
-						PostgreSQL, JavaScript, CSS, and HTML that allows users to text a
-						<a
+						PostgreSQL, JavaScript, CSS, and HTML that allows users to text a<a
 							href="https://www.twilio.com/learn/twilio-101/what-is-twilio"
 							target="_blank"
 							rel="noopener noreferrer"
