@@ -47,33 +47,21 @@ class Main extends React.Component {
 						</a>
 					</div>
 					<p>
-						A full-stack web app with an emphasis on the backend created with Node.js, Express.js,
-						PostgreSQL, JavaScript, CSS, and HTML that allows users to text a<a
-							href="https://www.twilio.com/learn/twilio-101/what-is-twilio"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Twilio
+						A full-stack web app built with
+						<a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+							React
+						</a>,<a href="https://nodejs.org/en/ " target="_blank" rel="noopener noreferrer">
+							Node.js
+						</a>,<a href="https://expressjs.com/ " target="_blank" rel="noopener noreferrer">
+							Express.js
+						</a>,<a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+							MongoDB
+						</a>, and
+						<a href="https://tonejs.github.io/" target="_blank" rel="noopener noreferrer">
+							Tone.js
 						</a>
-						number using
-						<a href="https://ifttt.com/about" target="_blank" rel="noopener noreferrer">
-							IFTTT
-						</a>
-						to then record a reminder and their GPS coordinates. This reminder gets saved in a database to
-						be accessible at a later time either via the web interface or by messaging the same number to
-						get a list of reminders.
-						<a href="https://www.npmjs.com/package/bcrypt" target="_blank" rel="noopener noreferrer">
-							Bcrypt
-						</a>
-						was used to hash the user's password while
-						<a
-							href="https://www.npmjs.com/package/express-session"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							express-session
-						</a>
-						was used to keep track of whether the user was still logged in or not.
+						that allows users to jam along with randomly created music. Users can also log into the app
+						using Google oAuth to save their own musical jams.
 					</p>
 					<h3>Features</h3>
 					<ul>
