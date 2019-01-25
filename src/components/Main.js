@@ -65,9 +65,10 @@ class Main extends React.Component {
 					</p>
 					<h3>Features</h3>
 					<ul>
-						<li>Full SMS support through Twilio</li>
-						<li>Create, retrieve, update, and delete reminders via SMS or web interface</li>
-						<li>View public reminders via web interface</li>
+						<li>Ability to save songs</li>
+						<li>Pulls samples from the FreeSound API based on a search query</li>
+						<li>Each experience is different with the generative element</li>
+						<li>Choose from a variety of instruments</li>
 						<div align="right">
 							<a
 								href="https://ran-jam.club"
