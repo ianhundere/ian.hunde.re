@@ -494,7 +494,7 @@ class Main extends React.Component {
 					<img className="image left" src={bike} height="150" alt="bicycle" />
 					<img className="image right" src={studio} alt="music studio" />
 					<p>
-						When I'm not coding or with my family, I like to go on long bike rides or make video game sounds
+						When I'm not tinkering at work or with my family, I like to go on long bike rides or make video game sounds
 						late into the night.
 						<sub>
 							<strong>ps</strong>
