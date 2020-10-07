@@ -658,9 +658,9 @@ class Main extends React.Component {
                             video portfolio
                         </a>
                         ), I realized how powerful technology could be in
-                        changing lives. Now, as a developer, I am excited to be
-                        at the forefront of creating innovative tools that add
-                        real value to people's lives.
+                        changing lives. I am excited to be at the forefront of
+                        creating innovative tools that add real value to
+                        people's lives.
                     </p>
                     <img
                         className="image left"
