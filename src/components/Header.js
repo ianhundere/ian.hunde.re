@@ -9,8 +9,8 @@ const Header = (props) => (
             <div className="inner">
                 <h1>Ian Hundere</h1>
                 <h4>DevOps<strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>{' '}SRE{' '}<strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>{' '}Cloud</h4>
+                <h2>Engineer</h2>
             </div>
-            <h2>Engineer</h2>
         </div>
         <nav>
             <ul>
