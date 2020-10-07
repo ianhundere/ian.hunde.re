@@ -14,11 +14,12 @@ const Header = (props) => (
                         <sub>
                             SRE
                             <sub>
-                                Cloud<sub>Engineer</sub>
+                                Cloud
                             </sub>
                         </sub>
                     </sub>
                 </h2>
+								<h2>Engineer</h2>
             </div>
         </div>
         <nav>
