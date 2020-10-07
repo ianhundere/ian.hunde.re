@@ -195,6 +195,11 @@ class Main extends React.Component {
                     </ul>
                     <hr />
                     <h2 align="center">GeoMindr</h2>
+										<img
+                        className="main image"
+                        src={project1}
+                        alt="Gif of GeoMindr"
+                    />
                     <p>
                         A full-stack web app with an emphasis on the backend
                         created with Node.js, Express.js, PostgreSQL,
