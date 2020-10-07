@@ -7,20 +7,13 @@ const Header = (props) => (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
         <div className="content">
             <div className="inner">
-                <h1>Ian Hundere</h1>
+                <h3>Ian Hundere</h3>
                 <sub>
-                    <h2>DevOps</h2>
+                    DevOps
                     <sub>
-                        <h2>SRE</h2>
+                        SRE
                         <sub>
-                            <h2>
-															Cloud
-														</h2>
-                            <sub>
-															<h2>
-																Engineer
-															</h2>
-														</sub>
+                            Cloud<sub>Engineer</sub>
                         </sub>
                     </sub>
                 </sub>
