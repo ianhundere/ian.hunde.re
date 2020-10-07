@@ -8,15 +8,15 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Ian Hundere</h1>
+                <sub>
+                    DevOps
                     <sub>
-                        DevOps{' '}
+                        SRE
                         <sub>
-                            SRE{' '}
-                            <sub>
-                                Cloud <sub>Engineer </sub>
-                            </sub>
+                            Cloud<sub>Engineer</sub>
                         </sub>
                     </sub>
+                </sub>
             </div>
         </div>
         <nav>
