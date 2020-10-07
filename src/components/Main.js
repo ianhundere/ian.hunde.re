@@ -77,7 +77,7 @@ class Main extends React.Component {
                             UniFi Controller
                         {' '}
                         </a>
-                    configured, but hope to add further applications in the future such as Plex, Bitwarden, and video security software integrated with unlocked Wyze cameras. Some of the lessons I learned were things I've learned at work, but it they're always good reminders.
+                    configured, but hope to add further applications in the future such as Plex, Bitwarden, and video security software integrated with unlocked Wyze cameras. Some of the lessons I learned were things I've learned at work, but they're always good reminders.
                     </p>
                     <h3>Lessons Learned</h3>
                     <ul>
