@@ -58,7 +58,7 @@ class Main extends React.Component {
                         </a>
                     </div>
                     <p>Fun with RPI and K3s.</p>
-                    <h3>Lessons Learned<</h3>
+                    <h3>Lessons Learned</h3>
                     <ul>
                         <li>ou</li>
                         <li>oui</li>
