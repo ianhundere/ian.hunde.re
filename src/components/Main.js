@@ -25,7 +25,6 @@ class Main extends React.Component {
                 }}
             />
         );
-
         return (
             <div
                 ref={this.props.setWrapperRef}
@@ -59,29 +58,12 @@ class Main extends React.Component {
                         </a>
                     </div>
                     <p>Fun with RPI and K3s.</p>
-                    <h3>Features</h3>
+                    <h3>Lessons Learned<</h3>
                     <ul>
-                        <li>Lessons Learned</li>
                         <li>ou</li>
                         <li>oui</li>
                         <li>wee</li>
                         <div align="right">
-                            <a
-                                href="https://ran-jam.club"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-laptop"
-                                alt="Link to Ran-Jam"
-                            >
-                                <a
-                                    href="https://ran-jam.club"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Ran-Jam"
-                                >
-                                    <em>Live Demo</em>
-                                </a>
-                            </a>
                             <strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
                             <a
                                 href="https://github.com/ianhundere/rpi-k3s"
@@ -212,19 +194,6 @@ class Main extends React.Component {
                     </ul>
                     <hr />
                     <h2 align="center">GeoMindr</h2>
-                    <div align="center">
-                        <a
-                            href="https://geomindr.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                className="image fit"
-                                src={project1}
-                                alt="Link to GeoMindr.com"
-                            />
-                        </a>
-                    </div>
                     <p>
                         A full-stack web app with an emphasis on the backend
                         created with Node.js, Express.js, PostgreSQL,
@@ -277,24 +246,6 @@ class Main extends React.Component {
                         <li>View public reminders via web interface</li>
                         <div align="right">
                             <a
-                                href="https://geomindr.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-laptop"
-                                alt="Link to GeoMindr"
-                            >
-                                <a
-                                    href="https://geomindr.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to GeoMindr"
-                                >
-                                    {' '}
-                                    <em>Live Demo</em>
-                                </a>
-                            </a>
-                            <strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
-                            <a
                                 href="https://github.com/ianhundere/GeoMindr"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -316,7 +267,7 @@ class Main extends React.Component {
                     <hr />
                     <h2 align="center">Parity</h2>
                     <a
-                        href="https://paritygame.club"
+                        href="https://paritymemorygame-aaly8t3wc.now.sh/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -364,14 +315,14 @@ class Main extends React.Component {
                         </li>
                         <div align="right">
                             <a
-                                href="https://paritygame.club"
+                                href="https://paritymemorygame-aaly8t3wc.now.sh/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="icon fa-laptop"
                                 alt="Link to Parity"
                             >
                                 <a
-                                    href="https://paritygame.club"
+                                    href="https://paritymemorygame-aaly8t3wc.now.sh/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     alt="Link to Parity"
@@ -403,7 +354,7 @@ class Main extends React.Component {
                     <hr />
                     <h2 align="center">React-Cital Piano</h2>
                     <a
-                        href="https://react-cital-piano.club/"
+                        href="https://react-cital-piano-ge90qfy7t.now.sh/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -436,14 +387,14 @@ class Main extends React.Component {
                         <li>Multiple keys can be pressed</li>
                         <div align="right">
                             <a
-                                href="https://react-cital-piano.club/"
+                                href="https://react-cital-piano-ge90qfy7t.now.sh/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="icon fa-laptop"
                                 alt="Link to React-Cital Piano"
                             >
                                 <a
-                                    href="https://react-cital-piano.club/"
+                                    href="https://react-cital-piano-ge90qfy7t.now.sh/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     alt="Link to React-Cital Piano"
@@ -475,7 +426,7 @@ class Main extends React.Component {
                     <hr />
                     <h2 align="center">Oblique Strategies</h2>
                     <a
-                        href="https://oblique-strategies.ianhundere.com"
+                        href="https://oblique-strategies-gpbyfeotj.now.sh/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -512,14 +463,14 @@ class Main extends React.Component {
                         <li>Strategies / images are randomized</li>
                         <div align="right">
                             <a
-                                href="https://oblique-strategies.ianhundere.com"
+                                href="https://oblique-strategies-gpbyfeotj.now.sh/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="icon fa-laptop"
                                 alt="Link to Oblique Strategies"
                             >
                                 <a
-                                    href="https://oblique-strategies.ianhundere.com"
+                                    href="https://oblique-strategies-gpbyfeotj.now.sh/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     alt="Link to Oblique Strategies"
