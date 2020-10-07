@@ -42,7 +42,7 @@ class Main extends React.Component {
                     style={{ display: 'none' }}
                 >
                     <h1 className="major">Projects</h1>
-                    <h2 align="center">Raspberry PI K3s Cluster</h2>
+                    <h2 align="center">RPI K3s Cluster</h2>
                     <div align="center">
                         <a
                             href="https://github.com/ianhundere/rpi-k3s"
