@@ -50,7 +50,7 @@ class Main extends React.Component {
                             rel="noopener noreferrer"
                         >
                             <img
-                                className="image fit"
+                                className="image main"
                                 src={project7}
                                 alt="Link to RPI K3s Repo"
                             />
