@@ -195,7 +195,7 @@ class Main extends React.Component {
                     </ul>
                     <hr />
                     <h2 align="center">GeoMindr</h2>
-										<img
+                    <img
                         className="main image"
                         src={project1}
                         alt="Gif of GeoMindr"
