@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
+    "@mdx-js/react": "^1.6.18",
+    "acorn": "^6.4.2",
     "acorn-dynamic-import": "^4.0.0",
     "gatsby": "^2.24.68",
     "gatsby-plugin-manifest": "^2.0.2",
