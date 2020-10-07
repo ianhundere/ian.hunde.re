@@ -5,10 +5,9 @@ import project1 from '../images/geomindr.gif';
 import project2 from '../images/parity.gif';
 import project3 from '../images/eggy.gif';
 import project4 from '../images/Scale-o-Rama.gif';
-import project5 from '../images/oblique.gif';
-import project6 from '../images/react-cital-piano.gif';
-import project7 from '../images/ran-jam.gif';
-import project8 from '../images/cluster.jpg';
+import project5 from '../images/react-cital-piano.gif';
+import project6 from '../images/ran-jam.gif';
+import project7 from '../images/cluster.gif';
 
 import me from '../images/ianhundere.jpg';
 import fam from '../images/fam.jpeg';
@@ -38,34 +37,49 @@ class Main extends React.Component {
             >
                 <article
                     id="intro"
-                    className={`${
-                        this.props.article === 'intro' ? 'active' : ''
-                    } ${this.props.articleTimeout ? 'timeout' : ''}`}
+                    className={`${this.props.article === 'intro' ? 'active' : ''
+                        } ${this.props.articleTimeout ? 'timeout' : ''}`}
                     style={{ display: 'none' }}
                 >
                     <h1 className="major">Projects</h1>
                     <h2 align="center">Raspberry PI K3s Cluster</h2>
                     <div align="center">
                         <a
-                            href="https://nextcloud.clusterian.pw"
+                            href="https://github.com/ianhundere/rpi-k3s"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <img
                                 className="image fit"
-                                src={project8}
-                                alt="Link to https://nextcloud.clusterian.pw"
+                                src={project7}
+                                alt="Link to RPI K3s Repo"
                             />
                         </a>
                     </div>
-                    <p>Fun with RPI and K3s.</p>
+                    <p>Earlier in the year, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I currently have
+                    <a
+                            href="https://nextcloud.clusterian.pw"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            NextCloud
+                    </a>
+                    and a
+                    <a
+                            href="https://unifi.clusterian.pw"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            UniFi Controller
+                    </a>
+                    configured, but hope to add further applications in the future such as Plex, Bitwarden, and video security software integrated with unlocked Wyze cameras.
+                    </p>
                     <h3>Lessons Learned</h3>
                     <ul>
-                        <li>ou</li>
-                        <li>oui</li>
-                        <li>wee</li>
+                        <li>Take your time</li>
+                        <li>Always try to understand the why behind something works (or doesn't work)</li>
+                        <li>Document everything</li>
                         <div align="right">
-                            <strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
                             <a
                                 href="https://github.com/ianhundere/rpi-k3s"
                                 target="_blank"
@@ -93,8 +107,8 @@ class Main extends React.Component {
                             rel="noopener noreferrer"
                         >
                             <img
-                                className="image fit"
-                                src={project7}
+                                className="image main"
+                                src={project6}
                                 alt="Link to ranjam"
                             />
                         </a>
@@ -114,6 +128,7 @@ class Main extends React.Component {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
+                            {' '}
                             Node.js
                         </a>
                         ,
@@ -131,6 +146,7 @@ class Main extends React.Component {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
+                            {' '}
                             MongoDB
                         </a>
                         , and
@@ -140,7 +156,7 @@ class Main extends React.Component {
                             rel="noopener noreferrer"
                         >
                             Tone.js
-                        </a>
+                        </a>{' '}
                         that allows users to jam along with randomly created
                         music. Users can also log into the app using Google
                         oAuth to save their own musical jams.
@@ -366,7 +382,7 @@ class Main extends React.Component {
                     >
                         <img
                             className="image main"
-                            src={project6}
+                            src={project5}
                             alt="Link to React-Cital Piano"
                         />
                     </a>
@@ -422,82 +438,6 @@ class Main extends React.Component {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     alt="Link to React-Cital Piano Repo"
-                                >
-                                    {' '}
-                                    <em>GitHub Repo</em>
-                                </a>
-                            </a>
-                        </div>
-                    </ul>
-                    <hr />
-                    <h2 align="center">Oblique Strategies</h2>
-                    <a
-                        href="https://oblique-strategies-gpbyfeotj.now.sh/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <div align="center">
-                            <img
-                                className="image fit"
-                                src={project5}
-                                alt="Gif of Oblique Strategies"
-                            />
-                        </div>
-                    </a>
-                    <p>
-                        A very simple front-end project that displays, Oblique
-                        Strategies; a card-based method for inspiring artists
-                        created by Brian Eno and Peter Schmidt.
-                    </p>
-                    <p />
-                    <h3>Features</h3>
-                    <ul>
-                        <li>
-                            An info modal that explains what Oblique Strategies
-                            is
-                        </li>
-                        <li>
-                            Each strategy is coupled with an image from{' '}
-                            <a
-                                href="https://imgur.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                imgur
-                            </a>{' '}
-                        </li>
-                        <li>Strategies / images are randomized</li>
-                        <div align="right">
-                            <a
-                                href="https://oblique-strategies-gpbyfeotj.now.sh/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-laptop"
-                                alt="Link to Oblique Strategies"
-                            >
-                                <a
-                                    href="https://oblique-strategies-gpbyfeotj.now.sh/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Oblique Strategies"
-                                >
-                                    {' '}
-                                    <em>Live Demo</em>
-                                </a>
-                            </a>
-                            <strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
-                            <a
-                                href="https://github.com/ianhundere/oblique-strategies"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-github"
-                                alt="Link to Oblique Strategies Repo"
-                            >
-                                <a
-                                    href="https://github.com/ianhundere/oblique-strategies"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Oblique Strategies Repo"
                                 >
                                     {' '}
                                     <em>GitHub Repo</em>
@@ -609,9 +549,8 @@ class Main extends React.Component {
                 </article>
                 <article
                     id="work"
-                    className={`${
-                        this.props.article === 'work' ? 'active' : ''
-                    } ${this.props.articleTimeout ? 'timeout' : ''}`}
+                    className={`${this.props.article === 'work' ? 'active' : ''
+                        } ${this.props.articleTimeout ? 'timeout' : ''}`}
                     style={{ display: 'none' }}
                 >
                     <h1 className="major">About</h1>
@@ -658,8 +597,8 @@ class Main extends React.Component {
                             video portfolio
                         </a>
                         ), I realized how powerful technology could be in
-                        changing lives. I am excited to be at the forefront of
-                        creating innovative tools that add real value to
+                        changing lives. I am now excited to be at the forefront
+                        of creating innovative tools that add real value to
                         people's lives.
                     </p>
                     <img
