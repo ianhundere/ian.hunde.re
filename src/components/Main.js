@@ -56,7 +56,8 @@ class Main extends React.Component {
                             />
                         </a>
                     </div>
-                    <p>Earlier in the year, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I currently have
+                    <p>
+                        Earlier in the year, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I learned a lot and managed to get everything up and running without too much hair pulling. I currently have
                     <a
                             href="https://***REMOVED***"
                             target="_blank"
@@ -72,12 +73,12 @@ class Main extends React.Component {
                         >
                             UniFi Controller
                     </a>
-                    configured, but hope to add further applications in the future such as Plex, Bitwarden, and video security software integrated with unlocked Wyze cameras.
+                    configured, but hope to add further applications in the future such as Plex, Bitwarden, and video security software integrated with unlocked Wyze cameras. Some of the lessons I learned were things I've learned at work, but it they're always good reminders.
                     </p>
                     <h3>Lessons Learned</h3>
                     <ul>
                         <li>Take your time</li>
-                        <li>Always try to understand the why behind something works (or doesn't work)</li>
+                        <li>Always try to understand the why behind something works (or doesn't work) before moving on</li>
                         <li>Document everything</li>
                         <div align="right">
                             <a
