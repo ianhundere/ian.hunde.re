@@ -81,9 +81,9 @@ class Main extends React.Component {
                     </p>
                     <h3>Lessons Learned</h3>
                     <ul>
-                        <li>Always understand the why behind how something works (or doesn't) before moving on</li>
-                        <li>Document everything</li>
                         <li>Take your time</li>
+                        <li>Document everything</li>
+                        <li>Always understand the why behind how something works (or doesn't) before moving on</li>
                         <div align="right">
                             <a
                                 href="https://github.com/ianhundere/rpi-k3s"
