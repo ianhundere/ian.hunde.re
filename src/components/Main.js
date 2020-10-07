@@ -8,6 +8,7 @@ import project4 from '../images/Scale-o-Rama.gif';
 import project5 from '../images/oblique.gif';
 import project6 from '../images/react-cital-piano.gif';
 import project7 from '../images/ran-jam.gif';
+import project8 from '../images/cluster.jpg';
 
 import me from '../images/ianhundere.jpg';
 import fam from '../images/fam.jpeg';
@@ -46,14 +47,14 @@ class Main extends React.Component {
                     <h2 align="center">Raspberry PI K3s Cluster</h2>
                     <div align="center">
                         <a
-                            href="https://ran-jam.club"
+                            href="https://nextcloud.clusterian.pw"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <img
                                 className="image fit"
-                                src={project7}
-                                alt="Link to https://ran-jam.club"
+                                src={project8}
+                                alt="Link to https://nextcloud.clusterian.pw"
                             />
                         </a>
                     </div>
