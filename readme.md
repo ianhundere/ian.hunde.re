@@ -1,8 +1,3 @@
-# ianhundere.com portfolio
+oi, this is a portfolio >---(^_^)---<
 
-**This is a starter for Gatsby.js V2.**
-
-## The original template (gatsby/html)
-
-- [gatsby starter](https://codebushi.com/gatsby-starters/)
-- [html5 starter]( https://html5up.net/)
+if there won't be dancing at the revolution, i'm not coming. ~ emma goldman
