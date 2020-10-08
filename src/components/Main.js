@@ -581,7 +581,7 @@ class Main extends React.Component {
                     </p>
                     <img className="image left" src={fam} alt="my family" />
                     <p>
-                        Right before I graduated, I met my wife and other half.
+                        Right before graduating, I met my wife and other half.
                         She has kept me sane ever since. We have two beautiful
                         children, whom we do our best to keep curious and
                         motivated.
@@ -601,10 +601,8 @@ class Main extends React.Component {
                         >
                             video portfolio
                         </a>
-                        ), I realized how powerful technology could be in
-                        changing lives. I am now excited to be at the forefront
-                        of creating innovative tools that add real value to
-                        people's lives.
+                        ), I decided to make a career change toward technology and registered to an intensive, 16-week full stack web development bootcamp. It was an incredibly rewarding experience and I managaged to secure a position right out of the gates as a software engineer primarily doing DevOps type work. I am now excited to be at the forefront
+                        of helping to create innovative tools that add value to people's lives.
                     </p>
                     <img
                         className="image left"
@@ -630,7 +628,7 @@ class Main extends React.Component {
                                 <sub>
                                     bleeps{' '}
                                     <sub>
-                                        and <sub>bloops </sub>
+                                        and{' '}<sub>bloops{' '}</sub>
                                     </sub>
                                 </sub>
                             </sub>
