@@ -83,7 +83,7 @@ class Main extends React.Component {
                     <ul>
                         <li>Take your time</li>
                         <li>Document everything</li>
-                        <li>It often it pays to know and understand the why behind something works (or doesn't) before moving on</li>
+                        <li>It often pays to know and understand the why behind something working (or not working) before moving on</li>
                         <div align="right">
                             <a
                                 href="https://github.com/ianhundere/rpi-k3s"
