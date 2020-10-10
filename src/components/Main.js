@@ -83,7 +83,7 @@ class Main extends React.Component {
                     <ul>
                         <li>Take your time</li>
                         <li>Document everything</li>
-                        <li>Sometimes it pays to know why something works (or doesn't) before moving on</li>
+                        <li>It often it pays to know and understand the why behind something works (or doesn't) before moving on</li>
                         <div align="right">
                             <a
                                 href="https://github.com/ianhundere/rpi-k3s"
@@ -91,7 +91,7 @@ class Main extends React.Component {
                                 rel="noopener noreferrer"
                                 class="icon fa-github"
                                 alt="Link to RPI K3s Repo"
-                            >
+                            >{' '}
                                 <a
                                     href="https://github.com/ianhundere/rpi-k3s"
                                     target="_blank"
@@ -154,7 +154,7 @@ class Main extends React.Component {
                             {' '}
                             MongoDB
                         </a>
-                        , and
+                        , and{' '}
                         <a
                             href="https://tonejs.github.io/"
                             target="_blank"
@@ -192,7 +192,7 @@ class Main extends React.Component {
                                     rel="noopener noreferrer"
                                     alt="Link to Ran-Jam"
                                 >
-                                    <em>Live Demo</em>
+                                    {' '}<em>Live Demo</em>
                                 </a>
                             </a>
                             <strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
@@ -202,7 +202,7 @@ class Main extends React.Component {
                                 rel="noopener noreferrer"
                                 class="icon fa-github"
                                 alt="Link to Ran-Jam Repo"
-                            >
+                            >{' '}
                                 <a
                                     href="https://github.com/ianhundere/Ran-Jam"
                                     target="_blank"
