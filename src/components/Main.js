@@ -81,7 +81,7 @@ class Main extends React.Component {
                     </p>
                     <h3>Lessons Learned</h3>
                     <ul>
-                        <li>Take your time</li>
+                        <li>Assume nothing</li>
                         <li>Document everything</li>
                         <li>It often pays to know and understand the why behind something working (or not working) before moving on</li>
                         <div align="right">
