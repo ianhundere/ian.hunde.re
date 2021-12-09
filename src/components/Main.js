@@ -57,27 +57,22 @@ class Main extends React.Component {
                         </a>
                     </div>
                     <p>
-                        Earlier in the year, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I learned a lot and managed to get everything up and running without too much hair pulling. I currently have{' '}
+                        Just before the pandemic, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. So when the coronavirus hit, I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I learned a lot and managed to get everything up and running without too much hair pulling. I currently have{' '}
                         <a
                             href="https://***REMOVED***"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            NextCloud
-                    </a>
+                            NextCloud</a>,
                         {' '}
-                    and a
-                    {' '}
                         <a
                             href="https://***REMOVED***"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            {' '}
-                            UniFi Controller
+                            a UniFi Controller</a>,
                         {' '}
-                        </a>
-                    configured, but hope to add further applications in the future such as Plex, Bitwarden, and video security software integrated with unlocked Wyze cameras. Some of the lessons I learned were things I've learned at work, but they're always good reminders.
+                        and a Ninjam server publically available, but I also host other applications privately such as Plex and Home Assistant. Some of the lessons I learned were things I've learned at work, but they're always good reminders.
                     </p>
                     <h3>Lessons Learned</h3>
                     <ul>
