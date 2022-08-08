@@ -26,7 +26,7 @@ const Footer = (props) => (
 			</li>
 			<li>
 				<a
-					href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ianhundere@gmail.com"
+					href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ian@hunde.re"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="icon fa-envelope"
