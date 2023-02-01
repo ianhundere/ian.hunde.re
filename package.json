@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "@mdx-js/react": "^1.6.18",
+    "@mdx-js/react": "^2.2.1",
     "acorn": "^6.4.2",
     "acorn-dynamic-import": "^4.0.0",
     "eslint": "^7.10.0",
