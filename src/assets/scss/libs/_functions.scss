@@ -1,34 +1,18 @@
-/// Gets a duration value.
-/// @param {string} $keys Key(s).
-/// @return {string} Value.
-@function _duration($keys...) {
-	@return val($duration, $keys...);
+@use 'sass:map';
+@use 'vars' as v;
+
+@function size($key) {
+    @return map.get(v.$size, $key);
 }
 
-/// Gets a font value.
-/// @param {string} $keys Key(s).
-/// @return {string} Value.
-@function _font($keys...) {
-	@return val($font, $keys...);
+@function palette($key) {
+    @return map.get(v.$palette, $key);
 }
 
-/// Gets a misc value.
-/// @param {string} $keys Key(s).
-/// @return {string} Value.
-@function _misc($keys...) {
-	@return val($misc, $keys...);
+@function duration($key) {
+    @return map.get(v.$duration, $key);
 }
 
-/// Gets a palette value.
-/// @param {string} $keys Key(s).
-/// @return {string} Value.
-@function _palette($keys...) {
-	@return val($palette, $keys...);
-}
-
-/// Gets a size value.
-/// @param {string} $keys Key(s).
-/// @return {string} Value.
-@function _size($keys...) {
-	@return val($size, $keys...);
+@function font($key) {
+    @return map.get(v.$font, $key);
 }
