@@ -9,15 +9,16 @@
     "acorn-dynamic-import": "^4.0.0",
     "eslint": "^7.10.0",
     "eslint-webpack-plugin": "^2.1.0",
-    "gatsby": "^5.13.6",
+    "gatsby": "^5.14.0",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-offline": "^6.5.0",
     "gatsby-plugin-react-helmet": "^6.5.0",
     "gatsby-plugin-sass": "^6.5.0",
+    "gatsby-plugin-static-folders": "^1.0.0",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6.1.0",
     "typescript": "^4.0.3"
   },
   "keywords": [
@@ -26,6 +27,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "vercel-build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,5 +38,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

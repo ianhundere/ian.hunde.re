@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import resume from '../images/IanHundereResume.pdf';
+const resume = '/IanHundereResume.pdf';
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -14,11 +14,6 @@ const Header = (props) => (
         </div>
         <nav>
             <ul>
-                <li>
-                    <a href="javascript:;" onClick={() => { props.onOpenArticle('intro'); }}>
-                        Projects
-                    </a>
-                </li>
                 <li>
                     <a
                         href="javascript:;"
@@ -45,3 +40,4 @@ Header.propTypes = {
 };
 
 export default Header;
+

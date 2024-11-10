@@ -23,6 +23,14 @@ class Main extends React.Component {
                 onClick={() => {
                     this.props.onCloseArticle();
                 }}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        this.props.onCloseArticle();
+                    }
+                }}
+                role="button"
+                tabIndex={0}
+                aria-label="Close article"
             />
         );
         return (
@@ -36,12 +44,122 @@ class Main extends React.Component {
                 }
             >
                 <article
-                    id="intro"
-                    className={`${this.props.article === 'intro' ? 'active' : ''
-                        } ${this.props.articleTimeout ? 'timeout' : ''}`}
+                    id="work"
+                    className={`${this.props.article === 'work' ? 'active' : ''} 
+                        ${this.props.articleTimeout ? 'timeout' : ''}`}
                     style={{ display: 'none' }}
                 >
-                    <h1 className="major">Projects</h1>
+                    <h1 className="major">About</h1>
+                    <section>
+                        <img
+                            className="image main"
+                            src={me}
+                            alt="ian hundere"
+                        />
+                    </section>
+                    <p>
+                        Born and raised in Texas, I often found myself up late
+                        at night tinkering about on the computer to either
+                        install the latest distro of Linux or meet new people on
+                        IRC. I left Texas for my undergrad in Victoria, BC,
+                        Canada, where I received a Bachelor of Arts in 20th
+                        Century American History (from a Canadian perspective).
+                        I came back south to connect with old friends and landed
+                        a job at Apple Inc. in the summer of 2007, just as all
+                        Apple employees were receiving their free iPhones. I
+                        worked there for a few years until I made the choice to
+                        go back to school to pursue a master's in education.
+                    </p>
+                    <img className="image left" src={fam} alt="my family" />
+                    <p>
+                        Right before graduating, I met my wife and other half.
+                        She has kept me sane ever since. We have two beautiful
+                        children, whom we do our best to keep curious and
+                        motivated.
+                    </p>
+                    <img
+                        className="image right"
+                        src={code}
+                        alt="screen of code"
+                    />
+                    <p>
+                        After a gratifying run in education, both as a teacher
+                        and an academic tech coach (
+                        <a
+                            href="https://www.youtube.com/watch?v=Uc2CcrMO1W8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            video portfolio
+                        </a>
+                        ), I decided to make a career change toward technology and registered to an intensive, 16-week full stack web development bootcamp. It was an incredibly rewarding experience and I managaged to secure a position right out of the gates as a software engineer primarily doing DevOps type work. I am now excited to be at the forefront
+                        of helping to create innovative tools that add value to people's lives.
+                    </p>
+                    <img
+                        className="image left"
+                        src={bike}
+                        height="150"
+                        alt="bicycle"
+                    />
+                    <img
+                        className="image right"
+                        src={studio}
+                        alt="music studio"
+                    />
+                    <p>
+                        When I'm not tinkering at work or with my family, I like
+                        to go on long bike rides or make video game sounds late
+                        into the night.
+                        <sub>
+                            <strong>ps</strong>
+                        </sub>
+                        <section align="left">
+                            <sub>
+                                my{' '}
+                                <sub>
+                                    bleeps{' '}
+                                    <sub>
+                                        and{' '}<sub>bloops{' '}</sub>
+                                    </sub>
+                                </sub>
+                            </sub>
+                        </section>
+                        <section align="center">
+                            <br />
+                        </section>
+                        <div align="center">
+                            <strong>&nbsp;</strong>
+                            <a
+                                href="https://grassnose.bandcamp.com/"
+                                alt="bandcamp link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span className="icon fa-bandcamp" />
+                            </a>{' '}
+                            <strong>&nbsp;/&nbsp;</strong>{' '}
+                            <a
+                                href="https://soundcloud.com/grassnose"
+                                alt="soundcloud link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span className="icon fa-soundcloud" />
+                            </a>
+                            <strong>&nbsp;</strong>{' '}
+                            <strong>&nbsp;/&nbsp;</strong>{' '}
+                            <a
+                                href="https://clyp.it/user/3b2ltmbv"
+                                alt="clyp.it link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span className="icon fa-music" />
+                            </a>
+                            <strong />{' '}
+                        </div>
+                    </p>
+                    <h1 className="major">Personal Projects</h1>
                     <h2 align="center">RPI K3s Cluster</h2>
                     <div align="center">
                         <a
@@ -57,22 +175,7 @@ class Main extends React.Component {
                         </a>
                     </div>
                     <p>
-                        Just before the pandemic, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. So when the coronavirus hit, I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I learned a lot and managed to get everything up and running without too much hair pulling. I currently have{' '}
-                        <a
-                            href="https://***REMOVED***"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            NextCloud</a>,
-                        {' '}
-                        <a
-                            href="https://***REMOVED***"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            a UniFi Controller</a>,
-                        {' '}
-                        and a Ninjam server publically available, but I also host other applications privately such as Plex and Home Assistant. Some of the lessons I learned were things I've learned at work, but they're always good reminders.
+                        Just before the pandemic, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. So when the coronavirus hit, I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I learned a lot and managed to get everything up and running without too much hair pulling. I currently have a UniFi Controller, FileBrowser, a Ninjam server and a variety of media services available; some publically and others via TailScale. Lessons learned were things I've learned at work, but they're always good reminders.
                     </p>
                     <h3>Lessons Learned</h3>
                     <ul>
@@ -545,124 +648,6 @@ class Main extends React.Component {
                             </a>
                         </div>
                     </ul>
-                    {close}
-                </article>
-                <article
-                    id="work"
-                    className={`${this.props.article === 'work' ? 'active' : ''
-                        } ${this.props.articleTimeout ? 'timeout' : ''}`}
-                    style={{ display: 'none' }}
-                >
-                    <h1 className="major">About</h1>
-                    <section>
-                        <img
-                            className="image main"
-                            src={me}
-                            alt="ian hundere"
-                        />
-                    </section>
-                    <p>
-                        Born and raised in Texas, I often found myself up late
-                        at night tinkering about on the computer to either
-                        install the latest distro of Linux or meet new people on
-                        IRC. I left Texas for my undergrad in Victoria, BC,
-                        Canada, where I received a Bachelor of Arts in 20th
-                        Century American History (from a Canadian perspective).
-                        I came back south to connect with old friends and landed
-                        a job at Apple Inc. in the summer of 2007, just as all
-                        Apple employees were receiving their free iPhones. I
-                        worked there for a few years until I made the choice to
-                        go back to school to pursue a master's in education.
-                    </p>
-                    <img className="image left" src={fam} alt="my family" />
-                    <p>
-                        Right before graduating, I met my wife and other half.
-                        She has kept me sane ever since. We have two beautiful
-                        children, whom we do our best to keep curious and
-                        motivated.
-                    </p>
-                    <img
-                        className="image right"
-                        src={code}
-                        alt="screen of code"
-                    />
-                    <p>
-                        After a gratifying run in education, both as a teacher
-                        and an academic tech coach (
-                        <a
-                            href="https://www.youtube.com/watch?v=Uc2CcrMO1W8"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            video portfolio
-                        </a>
-                        ), I decided to make a career change toward technology and registered to an intensive, 16-week full stack web development bootcamp. It was an incredibly rewarding experience and I managaged to secure a position right out of the gates as a software engineer primarily doing DevOps type work. I am now excited to be at the forefront
-                        of helping to create innovative tools that add value to people's lives.
-                    </p>
-                    <img
-                        className="image left"
-                        src={bike}
-                        height="150"
-                        alt="bicycle"
-                    />
-                    <img
-                        className="image right"
-                        src={studio}
-                        alt="music studio"
-                    />
-                    <p>
-                        When I'm not tinkering at work or with my family, I like
-                        to go on long bike rides or make video game sounds late
-                        into the night.
-                        <sub>
-                            <strong>ps</strong>
-                        </sub>
-                        <section align="left">
-                            <sub>
-                                my{' '}
-                                <sub>
-                                    bleeps{' '}
-                                    <sub>
-                                        and{' '}<sub>bloops{' '}</sub>
-                                    </sub>
-                                </sub>
-                            </sub>
-                        </section>
-                        <section align="center">
-                            <br />
-                        </section>
-                        <div align="center">
-                            <strong>&nbsp;</strong>
-                            <a
-                                href="https://grassnose.bandcamp.com/"
-                                alt="bandcamp link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="icon fa-bandcamp" />
-                            </a>{' '}
-                            <strong>&nbsp;/&nbsp;</strong>{' '}
-                            <a
-                                href="https://soundcloud.com/grassnose"
-                                alt="soundcloud link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="icon fa-soundcloud" />
-                            </a>
-                            <strong>&nbsp;</strong>{' '}
-                            <strong>&nbsp;/&nbsp;</strong>{' '}
-                            <a
-                                href="https://clyp.it/user/3b2ltmbv"
-                                alt="clyp.it link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="icon fa-music" />
-                            </a>
-                            <strong />{' '}
-                        </div>
-                    </p>
                     {close}
                 </article>
             </div>
