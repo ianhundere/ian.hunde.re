@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import resume from '../images/IanHundereResume.pdf';
+const resume = '/IanHundereResume.pdf';
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -45,3 +45,4 @@ Header.propTypes = {
 };
 
 export default Header;
+
