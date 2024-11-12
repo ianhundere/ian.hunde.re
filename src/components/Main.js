@@ -175,7 +175,7 @@ class Main extends React.Component {
                         </a>
                     </div>
                     <p>
-                        Just before the pandemic, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. So when the coronavirus hit, I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I learned a lot and managed to get everything up and running without too much hair pulling. I currently have a UniFi Controller, FileBrowser, a Ninjam server and a variety of media services available; some publically available and others accessed via TailScale. Some of the lessons I learned were things I've learned at work, but they're always good reminders.
+                        Just before the pandemic, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. So when the coronavirus hit, I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I learned a lot and managed to get everything up and running without too much hair pulling. I currently have a UniFi Controller, FileBrowser, a Ninjam server and a variety of media services available; some publically and others via TailScale. Lessons learned were things I've learned at work, but they're always good reminders.
                     </p>
                     <h3>Lessons Learned</h3>
                     <ul>
