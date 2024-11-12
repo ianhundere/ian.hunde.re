@@ -4,65 +4,93 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@use '../libs/vars' as v;
+@use '../libs/functions' as f;
+@use '../libs/mixins' as mix;
+@use '../libs/skel' as sk;
+
 /* BG */
 
-	#bg {
-		@include vendor('transform', 'scale(1.0)');
-		-webkit-backface-visibility: hidden;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100vh;
-		z-index: 1;
+#bg {
+    @include mix.vendor('transform', 'scale(1.0)');
+    backface-visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
 
-		&:before, &:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-		&:before {
-			@include vendor('transition', 'background-color #{_duration(bg)} ease-in-out');
-			@include vendor('transition-delay', '#{_duration(intro)}');
-			background-image:		linear-gradient(to top, #{_palette(bg-overlay)}, #{_palette(bg-overlay)}),
-									url('../../images/overlay.png');
-			background-size:		auto,
-									256px 256px;
-			background-position:	center,
-									center;
-			background-repeat:		no-repeat,
-									repeat;
-			z-index: 2;
-		}
+    &:before {
+        @include mix.vendor(
+            'transition',
+            'background-color #{f.duration(bg)} ease-in-out'
+        );
+        @include mix.vendor('transition-delay', '#{f.duration(intro)}');
+        background: linear-gradient(
+            to bottom,
+            rgba(19, 21, 25, 0.5),
+            rgba(19, 21, 25, 0.8)
+        );
+        z-index: 2;
+    }
 
-		&:after {
-			@include vendor('transform', 'scale(1.125)');
-			@include vendor('transition', (
-				'transform #{_duration(article)} ease-in-out',
-				'filter #{_duration(article)} ease-in-out'
-			));
-			background-image:		url('../../images/bg.jpg');
-			background-position:	center;
-			background-size:		cover;
-			background-repeat:		no-repeat;
-			z-index: 1;
-		}
+    &:after {
+        @include mix.vendor('transform', 'scale(1.125)');
+        @include mix.vendor(
+            'transition',
+            (
+                'transform #{f.duration(article)} ease-in-out',
+                'filter #{f.duration(article)} ease-in-out'
+            )
+        );
+        background: linear-gradient(
+            45deg,
+            #1b1f22 0%,
+            #2c3135 50%,
+            #1b1f22 100%
+        );
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        filter: contrast(1.1) brightness(0.9);
+    }
 
-		.body.is-article-visible & {
-			&:after {
-				@include vendor('transform', 'scale(1.0825)');
-				@include vendor('filter', 'blur(0.2rem)');
-			}
-		}
+    .body.is-article-visible & {
+        &:after {
+            @include mix.vendor('transform', 'scale(1.0825)');
+            @include mix.vendor('filter', 'blur(0.2rem)');
+        }
+    }
 
-		.body.is-loading & {
-			&:before {
-				background-color:	_palette(bg-alt);
-			}
-		}
-	}
+    .body.is-loading & {
+        &:before {
+            background-color: f.palette(bg-alt);
+        }
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

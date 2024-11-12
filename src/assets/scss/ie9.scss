@@ -1,7 +1,7 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/skel';
+@use 'libs/vars' as v;
+@use 'libs/functions' as f;
+@use 'libs/mixins' as mix;
+@use 'libs/skel' as sk;
 
 /*
 	Dimension by HTML5 UP
@@ -13,7 +13,7 @@
 
 #bg {
 	&:before {
-		background: _palette(bg-overlay);
+		background: v._palette(bg-overlay);
 	}
 }
 

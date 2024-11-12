@@ -4,14 +4,24 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@use '../libs/vars' as *;
+@use '../libs/functions' as *;
+@use '../libs/mixins' as mix;
+@use '../libs/skel' as *;
+@use 'sass:math';
+
 /* Icon */
 
 .icon {
-	@include icon;
-	border-bottom: none;
-	position: relative;
+    @include mix.icon;
+    border-bottom: none;
+    position: relative;
 
-	> .label {
-		display: none;
-	}
+    > .label {
+        display: none;
+    }
+
+    &:before {
+        line-height: inherit;
+    }
 }
