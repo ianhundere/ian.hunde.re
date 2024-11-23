@@ -1,10 +1,11 @@
 @use 'sass:map';
+@use 'vars' as v;
 
 $breakpoints: () !default;
 
 @mixin breakpoint($name) {
-    @if map.has-key($breakpoints, $name) {
-        @media screen and #{map.get($breakpoints, $name)} {
+    @if map.has-key(v.$breakpoints, $name) {
+        @media screen and #{map.get(v.$breakpoints, $name)} {
             @content;
         }
     }

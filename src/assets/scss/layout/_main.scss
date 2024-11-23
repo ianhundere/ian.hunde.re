@@ -8,6 +8,7 @@
 @use '../libs/functions' as f;
 @use '../libs/mixins' as mix;
 @use '../libs/skel' as sk;
+@use '../libs/breakpoints' as break;
 @use 'sass:color';
 
 /* Main */
@@ -106,9 +107,9 @@
 
 		}
 
-		@include breakpoint(small) {
+		@include break.breakpoint(small) {
 			article {
-				@include padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
+				@include sk.padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
 				.close {
 					&:before {
 						top: 0.875rem;
@@ -121,9 +122,9 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include break.breakpoint(xsmall) {
 			article {
-				@include padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
+				@include sk.padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
 			}
 		}
 	}
