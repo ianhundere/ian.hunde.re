@@ -7,7 +7,7 @@
     "@mdx-js/react": "^2.2.1",
     "acorn": "^6.4.2",
     "acorn-dynamic-import": "^4.0.0",
-    "eslint": "^7.10.0",
+    "eslint": "^9.26.0",
     "eslint-webpack-plugin": "^2.1.0",
     "gatsby": "^5.14.6",
     "gatsby-plugin-manifest": "^5.12.3",
