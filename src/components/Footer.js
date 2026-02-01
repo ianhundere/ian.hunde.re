@@ -24,16 +24,6 @@ const Footer = (props) => (
 					<span class="label">Linked-In</span>
 				</a>
 			</li>
-			<li>
-				<a
-					href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ian@hunde.re"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="icon fa-envelope"
-				>
-					<span class="label">Email</span>
-				</a>
-			</li>
 		</ul>
 		<p className="copyright">
 			&copy; Ian Hundere&nbsp;|&nbsp;Built with{' '}
