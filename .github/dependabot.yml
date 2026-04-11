@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    # Group all npm updates into a single PR per cycle to avoid the
+    # per-package PR explosion (~daily runs on default config).
+    groups:
+      all-deps:
+        patterns:
+          - "*"
+    # Only one open Dependabot PR at a time — if it's stale, close it
+    # and the next cycle will open a fresh one with current versions.
+    open-pull-requests-limit: 1
