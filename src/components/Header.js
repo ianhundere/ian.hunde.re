@@ -10,7 +10,7 @@ const Header = (props) => (
                 <h1>Ian Hundere</h1>
                 <h4>Lead DevOps<strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>{' '}SRE{' '}<strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>{' '}Platform</h4>
                 <h2>Engineer</h2>
-                <h4>built<strong>&nbsp;/&nbsp;</strong>{' '}shipped{' '}<strong>&nbsp;/&nbsp;</strong>{' '}trusted</h4>
+                <h4>built{' '}<strong>&nbsp;/&nbsp;</strong>{' '}shipped{' '}<strong>&nbsp;/&nbsp;</strong>{' '}trusted</h4>
             </div>
         </div>
         <nav>
