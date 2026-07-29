@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Ian Hundere",
-    description: "Ian Hundere's Portfolio",
+    description: "Ian Hundere / Lead DevOps Engineer specializing in software supply-chain security / cloud infrastructure + devops",
     siteUrl: "https://ian.hunde.re"
   },
   plugins: [
@@ -11,7 +11,7 @@ module.exports = {
       options: {
         name: 'Ian Hundere — Portfolio',
         short_name: 'hunde.re',
-        description: "Ian Hundere's Portfolio",
+        description: "Ian Hundere / Lead DevOps Engineer specializing in software supply-chain security / cloud infrastructure + devops",
         lang: 'en',
         start_url: '/',
         background_color: '#1b1f22',
