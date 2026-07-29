@@ -16,13 +16,24 @@ const Header = (props) => (
             <ul>
                 <li>
                     <a
+                        href="#about"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            props.onOpenArticle('about');
+                        }}
+                    >
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a
                         href="#work"
                         onClick={(e) => {
                             e.preventDefault();
                             props.onOpenArticle('work');
                         }}
                     >
-                        About
+                        Work
                     </a>
                 </li>
                 <li>

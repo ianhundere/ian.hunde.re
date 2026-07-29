@@ -44,8 +44,8 @@ class Main extends React.Component {
                 }
             >
                 <article
-                    id="work"
-                    className={`${this.props.article === 'work' ? 'active' : ''} 
+                    id="about"
+                    className={`${this.props.article === 'about' ? 'active' : ''}
                         ${this.props.articleTimeout ? 'timeout' : ''}`}
                     style={{ display: 'none' }}
                 >
@@ -58,24 +58,22 @@ class Main extends React.Component {
                         />
                     </section>
                     <p>
-                        Born and raised in Texas, I often found myself up late
-                        at night tinkering about on the computer to either
-                        install the latest distro of Linux or meet new people on
-                        IRC. I left Texas for my undergrad in Victoria, BC,
-                        Canada, where I received a Bachelor of Arts in 20th
-                        Century American History (from a Canadian perspective).
-                        I came back south to connect with old friends and landed
-                        a job at Apple Inc. in the summer of 2007, just as all
-                        Apple employees were receiving their free iPhones. I
-                        worked there for a few years until I made the choice to
-                        go back to school to pursue a master's in education.
+                        Born and raised in Texas, I spent late nights installing
+                        whatever Linux distro was new that week and meeting
+                        strangers on IRC. I headed north for undergrad in
+                        Victoria, BC, where I picked up a BA in 20th Century
+                        American History (from a Canadian perspective,
+                        naturally). Back south, I landed at Apple in the summer
+                        of 2007 — right as every employee was handed a free
+                        iPhone — and stayed five years before going back to
+                        school for a master's in education.
                     </p>
                     <img className="image left" src={fam} alt="my family" />
                     <p>
-                        Right before graduating, I met my wife and other half.
-                        She has kept me sane ever since. We have two beautiful
-                        children, whom we do our best to keep curious and
-                        motivated.
+                        Right before graduating, I met my wife and other half;
+                        she's kept me sane ever since. We have two kids we do
+                        our best to keep curious, motivated, and occasionally on
+                        time.
                     </p>
                     <img
                         className="image right"
@@ -83,8 +81,9 @@ class Main extends React.Component {
                         alt="screen of code"
                     />
                     <p>
-                        After a gratifying run in education, both as a teacher
-                        and an academic tech coach (
+                        After a gratifying run in education — teaching 4th and
+                        5th graders, then coaching teachers as an academic
+                        technologist (
                         <a
                             href="https://www.youtube.com/watch?v=Uc2CcrMO1W8"
                             target="_blank"
@@ -92,8 +91,21 @@ class Main extends React.Component {
                         >
                             video portfolio
                         </a>
-                        ), I decided to make a career change toward technology and registered to an intensive, 16-week full stack web development bootcamp. It was an incredibly rewarding experience and I managaged to secure a position right out of the gates as a software engineer primarily doing DevOps type work. I am now excited to be at the forefront
-                        of helping to create innovative tools that add value to people's lives.
+                        ) — the tinkering itch won out, and around 2018 I
+                        retrained and made the leap into engineering. I've been
+                        doing DevOps and platform work ever since, and today I'm
+                        a Lead DevOps Engineer specializing in software
+                        supply-chain security, working remotely with Liatrio —
+                        helping teams prove where their software actually comes
+                        from. Lately that means designing private Sigstore
+                        stacks, getting builds to SLSA Build Level 3 with GitHub
+                        Artifact Attestations, writing a Go CLI that uses
+                        Sigstore and OPA policy to decide whether an artifact
+                        gets to ship, and contributing to the open source
+                        projects (cosign, rekor, fulcio) that make it work.
+                        Honestly, the teaching never stopped — mentoring
+                        engineers is my favorite part of the job. That, and
+                        getting software to show its work.
                     </p>
                     <img
                         className="image left"
@@ -107,58 +119,47 @@ class Main extends React.Component {
                         alt="music studio"
                     />
                     <p>
-                        When I'm not tinkering at work or with my family, I like
-                        to go on long bike rides or make video game sounds late
-                        into the night.
-                        <sub>
-                            <strong>ps</strong>
-                        </sub>
-                        <section align="left">
-                            <sub>
-                                my{' '}
-                                <sub>
-                                    bleeps{' '}
-                                    <sub>
-                                        and{' '}<sub>bloops{' '}</sub>
-                                    </sub>
-                                </sub>
-                            </sub>
-                        </section>
-                        <section align="center">
-                            <br />
-                        </section>
-                        <div align="center">
-                            <strong>&nbsp;</strong>
-                            <a
-                                href="https://grassnose.bandcamp.com/"
-                                alt="bandcamp link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="icon fa-bandcamp" />
-                            </a>{' '}
-                            <strong>&nbsp;/&nbsp;</strong>{' '}
-                            <a
-                                href="https://soundcloud.com/grassnose"
-                                alt="soundcloud link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="icon fa-soundcloud" />
-                            </a>
-                            <strong>&nbsp;</strong>{' '}
-                            <strong>&nbsp;/&nbsp;</strong>{' '}
-                            <a
-                                href="https://clyp.it/user/3b2ltmbv"
-                                alt="clyp.it link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="icon fa-music" />
-                            </a>
-                            <strong />{' '}
-                        </div>
+                        When I'm not tinkering at work or with my family, I'm
+                        out on a long bike ride or up too late making video game
+                        sounds. If you want proof of the latter, my bleeps and
+                        bloops are below.
                     </p>
+                    <div align="center">
+                        <a
+                            href="https://grassnose.bandcamp.com/"
+                            alt="bandcamp link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="icon fa-bandcamp" />
+                        </a>{' '}
+                        <strong>&nbsp;/&nbsp;</strong>{' '}
+                        <a
+                            href="https://soundcloud.com/grassnose"
+                            alt="soundcloud link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="icon fa-soundcloud" />
+                        </a>{' '}
+                        <strong>&nbsp;/&nbsp;</strong>{' '}
+                        <a
+                            href="https://clyp.it/user/3b2ltmbv"
+                            alt="clyp.it link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="icon fa-music" />
+                        </a>
+                    </div>
+                    {close}
+                </article>
+                <article
+                    id="work"
+                    className={`${this.props.article === 'work' ? 'active' : ''}
+                        ${this.props.articleTimeout ? 'timeout' : ''}`}
+                    style={{ display: 'none' }}
+                >
                     <h1 className="major">Personal Projects</h1>
                     <h2 align="center">RPI K3s Cluster</h2>
                     <div align="center">
