@@ -1,12 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import project1 from '../images/geomindr.gif';
-import project2 from '../images/parity.gif';
-import project3 from '../images/eggy.gif';
-import project4 from '../images/Scale-o-Rama.gif';
-import project5 from '../images/react-cital-piano.gif';
-import project6 from '../images/ran-jam.gif';
 import project7 from '../images/cluster.gif';
 
 import me from '../images/ianhundere.jpg';
@@ -160,7 +154,47 @@ class Main extends React.Component {
                         ${this.props.articleTimeout ? 'timeout' : ''}`}
                     style={{ display: 'none' }}
                 >
-                    <h1 className="major">Personal Projects</h1>
+                    <h1 className="major">Work</h1>
+                    <h2 align="center">Software Supply-Chain Governance</h2>
+                    <p>
+                        My day job centers on autogov, the automated governance
+                        system we build at Liatrio: artifacts ship with SLSA
+                        Build Level 3 provenance through GitHub Artifact
+                        Attestations, and a Go CLI verifies those attestations
+                        — provenance, SBOMs, verification summaries — against
+                        OPA policy before anything is allowed to deploy. The
+                        reusable workflows behind it are open source.
+                    </p>
+                    <div align="right">
+                        <a
+                            href="https://github.com/liatrio/autogov-workflows"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="icon fa-github" />{' '}
+                            <em>autogov-workflows</em>
+                        </a>
+                    </div>
+                    <hr />
+                    <h2 align="center">Sigstore Open Source</h2>
+                    <p>
+                        Along the way I've contributed across the Sigstore
+                        ecosystem — cosign, rekor, fulcio, timestamp-authority —
+                        mostly around certificate handling, timestamping, and
+                        the plumbing that keeps signatures verifiable end to
+                        end.
+                    </p>
+                    <div align="right">
+                        <a
+                            href="https://github.com/sigstore"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="icon fa-github" />{' '}
+                            <em>github.com/sigstore</em>
+                        </a>
+                    </div>
+                    <hr />
                     <h2 align="center">RPI K3s Cluster</h2>
                     <div align="center">
                         <a
@@ -176,479 +210,41 @@ class Main extends React.Component {
                         </a>
                     </div>
                     <p>
-                        Just before the pandemic, I built a small Raspberry Pi using a Compute Module 3+ that runs openVPN and Kodi on boot. So when the coronavirus hit, I figured I ought to start playing with Kubernetes at home since I play with it all day at work. So I built a Kubernetes Raspberry Pi cluster with 4 Raspberry Pi 4s each with 4GB RAM. I learned a lot and managed to get everything up and running without too much hair pulling. I currently have a UniFi Controller, FileBrowser, a Ninjam server and a variety of media services available; some publically and others via TailScale. Lessons learned were things I've learned at work, but they're always good reminders.
+                        The homelab: a four-node Raspberry Pi 4 Kubernetes
+                        cluster running k3s, hosting a UniFi controller,
+                        FileBrowser, a Ninjam server for remote jams, and a
+                        stack of media services — some public, some tucked
+                        behind Tailscale. It's where work ideas get tested
+                        before they're work ideas.
                     </p>
-                    <h3>Lessons Learned</h3>
-                    <ul>
-                        <li>Assume nothing</li>
-                        <li>Document everything</li>
-                        <li>It often pays to know and understand the why behind something working (or not working) before moving on</li>
-                        <div align="right">
-                            <a
-                                href="https://github.com/ianhundere/rpi-k3s"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-github"
-                                alt="Link to RPI K3s Repo"
-                            >{' '}
-                                <a
-                                    href="https://github.com/ianhundere/rpi-k3s"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to RPI K3s Repo"
-                                >
-                                    <em>GitHub Repo</em>
-                                </a>
-                            </a>
-                        </div>
-                    </ul>
-                    <hr />
-                    <h2 align="center">Ran-Jam</h2>
-                    <div align="center">
+                    <div align="right">
                         <a
-                            href="https://ran-jam-174homj5z.now.sh/"
+                            href="https://github.com/ianhundere/rpi-k3s"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img
-                                className="image main"
-                                src={project6}
-                                alt="Link to ranjam"
-                            />
+                            <span className="icon fa-github" />{' '}
+                            <em>GitHub Repo</em>
                         </a>
                     </div>
-                    <p>
-                        A full-stack web app built with{' '}
-                        <a
-                            href="https://reactjs.org/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            React
-                        </a>
-                        ,
-                        <a
-                            href="https://nodejs.org/en/ "
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {' '}
-                            Node.js
-                        </a>
-                        ,
-                        <a
-                            href="https://expressjs.com/ "
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {' '}
-                            Express.js
-                        </a>
-                        ,
-                        <a
-                            href="https://www.mongodb.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {' '}
-                            MongoDB
-                        </a>
-                        , and{' '}
-                        <a
-                            href="https://tonejs.github.io/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Tone.js
-                        </a>{' '}
-                        that allows users to jam along with randomly created
-                        music. Users can also log into the app using Google
-                        oAuth to save their own musical jams.
-                    </p>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>Ability to save songs</li>
-                        <li>
-                            Pulls samples from the FreeSound API based on a
-                            search query
-                        </li>
-                        <li>
-                            Each experience is different with the generative
-                            element
-                        </li>
-                        <li>Choose from a variety of instruments</li>
-                        <div align="right">
-                            <a
-                                href="https://ran-jam-174homj5z.now.sh/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-laptop"
-                                alt="Link to Ran-Jam"
-                            >
-                                <a
-                                    href="https://ran-jam-174homj5z.now.sh/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Ran-Jam"
-                                >
-                                    {' '}<em>Live Demo</em>
-                                </a>
-                            </a>
-                            <strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
-                            <a
-                                href="https://github.com/ianhundere/Ran-Jam"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-github"
-                                alt="Link to Ran-Jam Repo"
-                            >{' '}
-                                <a
-                                    href="https://github.com/ianhundere/Ran-Jam"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Ran-Jam Repo"
-                                >
-                                    <em>GitHub Repo</em>
-                                </a>
-                            </a>
-                        </div>
-                    </ul>
                     <hr />
-                    <h2 align="center">GeoMindr</h2>
-                    <img
-                        className="main image"
-                        src={project1}
-                        alt="Gif of GeoMindr"
-                    />
+                    <h2 align="center">Earlier Work</h2>
                     <p>
-                        A full-stack web app with an emphasis on the backend
-                        created with Node.js, Express.js, PostgreSQL,
-                        JavaScript, CSS, and HTML that allows users to text a{' '}
+                        Before all that: the projects from my retraining years —
+                        a generative jam machine, an SMS reminder service, a
+                        memory game, a synth or two — still live on GitHub, if
+                        you enjoy a little archaeology.
+                    </p>
+                    <div align="right">
                         <a
-                            href="https://www.twilio.com/learn/twilio-101/what-is-twilio"
+                            href="https://github.com/ianhundere"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Twilio
-                        </a>{' '}
-                        number using{' '}
-                        <a
-                            href="https://ifttt.com/about"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            IFTTT
-                        </a>{' '}
-                        to then record a reminder and their GPS coordinates.
-                        This reminder gets saved in a database to be accessible
-                        at a later time either via the web interface or by
-                        messaging the same number to get a list of reminders.{' '}
-                        <a
-                            href="https://www.npmjs.com/package/bcrypt"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Bcrypt{' '}
+                            <span className="icon fa-github" />{' '}
+                            <em>github.com/ianhundere</em>
                         </a>
-                        was used to hash the user's password while
-                        <a
-                            href="https://www.npmjs.com/package/express-session"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {' '}
-                            express-session{' '}
-                        </a>
-                        was used to keep track of whether the user was still
-                        logged in or not.
-                    </p>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>Full SMS support through Twilio</li>
-                        <li>
-                            Create, retrieve, update, and delete reminders via
-                            SMS or web interface
-                        </li>
-                        <li>View public reminders via web interface</li>
-                        <div align="right">
-                            <a
-                                href="https://github.com/ianhundere/GeoMindr"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-github"
-                                alt="Link to GeoMindr Repo"
-                            >
-                                <a
-                                    href="https://github.com/ianhundere/GeoMindr"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to GeoMindr Repo"
-                                >
-                                    {' '}
-                                    <em>GitHub Repo</em>
-                                </a>
-                            </a>
-                        </div>
-                    </ul>
-                    <hr />
-                    <h2 align="center">Parity</h2>
-                    <a
-                        href="https://paritymemorygame-aaly8t3wc.now.sh/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            className="image main"
-                            src={project2}
-                            alt="Link to the Parity Memory Game"
-                        />
-                    </a>
-                    <p>
-                        A front-end memory game created with JavaScript, CSS,
-                        and HTML where the user matches tiles based on pictures
-                        and sounds pulled randomly from two APIs (
-                        <a
-                            href="https://freesound.org/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Free Sound
-                        </a>{' '}
-                        and{' '}
-                        <a
-                            href="https://https://unsplash.com/.org/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Unsplash Image
-                        </a>
-                        ) making every gaming experience unique.
-                    </p>
-                    <p />
-                    <h3>Features</h3>
-                    <ul>
-                        <li>
-                            Progressive level system that allows users to play 5
-                            levels of increasing difficulty
-                        </li>
-                        <li>
-                            Match either image or sound; excellent for
-                            accessibility
-                        </li>
-                        <li>
-                            Change between themes after each level completion or
-                            failure
-                        </li>
-                        <div align="right">
-                            <a
-                                href="https://paritymemorygame-aaly8t3wc.now.sh/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-laptop"
-                                alt="Link to Parity"
-                            >
-                                <a
-                                    href="https://paritymemorygame-aaly8t3wc.now.sh/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Parity"
-                                >
-                                    {' '}
-                                    <em>Live Demo</em>
-                                </a>
-                            </a>
-                            <strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
-                            <a
-                                href="https://github.com/ianhundere/parity-memory-game"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-github"
-                                alt="Link to Parity Memory Game Repo"
-                            >
-                                <a
-                                    href="https://github.com/ianhundere/parity-memory-game"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Parity Memory Game Repo"
-                                >
-                                    {' '}
-                                    <em>GitHub Repo</em>
-                                </a>
-                            </a>
-                        </div>
-                    </ul>
-                    <hr />
-                    <h2 align="center">React-Cital Piano</h2>
-                    <a
-                        href="https://react-cital-piano-ge90qfy7t.now.sh/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            className="image main"
-                            src={project5}
-                            alt="Link to React-Cital Piano"
-                        />
-                    </a>
-                    <p>
-                        A front-end synthesizer built using React and (
-                        <a
-                            href="http://tonejs.github.io/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Tone.js
-                        </a>
-                        ). The user is given 2 octaves to play with as well as
-                        sheet music and a metronome to better help them
-                        understand music theory.
-                    </p>
-                    <h3>Features</h3>
-                    <ul>
-                        <li>Keys controlled via mouse or QWERTY keyboard </li>
-                        <li>
-                            Each key held down lights up pink to inform the user
-                            what keys are pressed
-                        </li>
-                        <li>Multiple keys can be pressed</li>
-                        <div align="right">
-                            <a
-                                href="https://react-cital-piano-ge90qfy7t.now.sh/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-laptop"
-                                alt="Link to React-Cital Piano"
-                            >
-                                <a
-                                    href="https://react-cital-piano-ge90qfy7t.now.sh/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to React-Cital Piano"
-                                >
-                                    {' '}
-                                    <em>Live Demo</em>
-                                </a>
-                            </a>
-                            <strong>&nbsp;&nbsp;/&nbsp;&nbsp;</strong>
-                            <a
-                                href="https://github.com/ianhundere/React-Cital-Piano"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-github"
-                                alt="Link to React-Cital Piano Repo"
-                            >
-                                <a
-                                    href="https://github.com/ianhundere/React-Cital-Piano"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to React-Cital Piano Repo"
-                                >
-                                    {' '}
-                                    <em>GitHub Repo</em>
-                                </a>
-                            </a>
-                        </div>
-                    </ul>
-                    <hr />
-                    <h2 align="center">
-                        Eggy <sup>Mc</sup>
-                        Eggy <br />
-                        <sup>and</sup>
-                        <sub>Friends</sub>
-                    </h2>
-                    <img
-                        className="image main"
-                        src={project3}
-                        alt="Gif of Eggy Game"
-                    />
-                    <p>
-                        A simple shoot'em up game created using Python and
-                        Pygame.
-                    </p>
-                    <p />
-                    <h3>Features</h3>
-                    <ul>
-                        <li>
-                            Ability to travel in all 2D directions (up, down,
-                            left, and right)
-                        </li>
-                        <li>Splash screen with instructions on how to play</li>
-                        <li>A score counter / multiple lives</li>
-                        <div align="right">
-                            <a
-                                href="https://github.com/ianhundere/Scales-O-Rama"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-github"
-                                alt="Link to Eggy Game Repo"
-                            >
-                                <a
-                                    href="https://github.com/ianhundere/Scales-O-Rama"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Eggy Game Repo"
-                                >
-                                    {' '}
-                                    <em>GitHub Repo</em>
-                                </a>
-                            </a>
-                        </div>
-                    </ul>
-                    <hr />
-                    <h2 align="center">
-                        Scales
-                        <sub>
-                            <strong>-O-</strong>
-                        </sub>
-                        <br />
-                        Rama
-                    </h2>
-                    <img
-                        className="main image"
-                        src={project4}
-                        alt="Gif of Scale-O-Rama"
-                    />
-                    <p>
-                        A simple python app that allows users to find scales
-                        based on inputted notes or randomly choose scales from a
-                        variety of musical modes.
-                    </p>
-                    <p />
-                    <h3>Features</h3>
-                    <ul>
-                        <li>
-                            Scales randomly chosen from major, minor, dorian,
-                            phrygian, lydian, mixolydian, and locrian scales
-                        </li>
-                        <li>
-                            The itertools module is used to flatten the
-                            dictionary of scales into values which then allow
-                            the scales to be randomized
-                        </li>
-                        <li>
-                            If the incorrect option is chosen, the user is
-                            alerted to enter either "lookup" or "random"
-                        </li>
-                        <div align="right">
-                            <a
-                                href="https://github.com/ianhundere/Scales-O-Rama"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="icon fa-github"
-                                alt="Link to Scales-O-Rama Repo"
-                            >
-                                <a
-                                    href="https://github.com/ianhundere/Scales-O-Rama"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    alt="Link to Scales-O-Rama Repo"
-                                >
-                                    {' '}
-                                    <em>GitHub Repo</em>
-                                </a>
-                            </a>
-                        </div>
-                    </ul>
+                    </div>
                     {close}
                 </article>
             </div>
