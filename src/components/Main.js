@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import project7 from '../images/cluster.gif';
+import clusterGif from '../images/cluster.gif';
 
 import me from '../images/ianhundere.jpg';
 import fam from '../images/fam.jpeg';
@@ -237,7 +237,7 @@ class Main extends React.Component {
                         >
                             <img
                                 className="image main"
-                                src={project7}
+                                src={clusterGif}
                                 alt="Link to RPI K3s Repo"
                             />
                         </a>
@@ -299,7 +299,7 @@ class Main extends React.Component {
                             name="botcheck"
                             tabIndex={-1}
                             autoComplete="off"
-                            style={{ display: 'none' }}
+                            hidden
                         />
                         <div className="field half first">
                             <label htmlFor="name">Name</label>
