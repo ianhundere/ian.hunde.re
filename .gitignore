@@ -6,3 +6,13 @@ yarn-error.log
 # Build directory
 /public
 .DS_Store
+
+# Environment
+.env*
+
+# AI tooling (local planning/implementation artifacts)
+.agent/
+.agents/
+.claude/
+_bmad/
+_bmad-output/
