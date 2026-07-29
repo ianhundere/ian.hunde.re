@@ -3,15 +3,16 @@ import PropTypes from 'prop-types';
 
 const Footer = (props) => (
 	<footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
-		<ul class="icons">
+		<ul className="icons">
 			<li>
 				<a
 					href="https://github.com/ianhundere"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="icon fa-github"
+					className="icon fa-github"
+					aria-label="GitHub"
 				>
-					<span class="label">GitHub</span>
+					<span className="label">GitHub</span>
 				</a>
 			</li>
 			<li>
@@ -19,15 +20,16 @@ const Footer = (props) => (
 					href="https://www.linkedin.com/in/ianhundere/"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="icon fa-linkedin"
+					className="icon fa-linkedin"
+					aria-label="LinkedIn"
 				>
-					<span class="label">Linked-In</span>
+					<span className="label">Linked-In</span>
 				</a>
 			</li>
 		</ul>
 		<p className="copyright">
 			&copy; Ian Hundere&nbsp;|&nbsp;Built with{' '}
-			<a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">
+			<a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer">
 				Gatsby.js
 			</a>&nbsp;|&nbsp;Design:
 			<a href="https://html5up.net" target="_blank" rel="noopener noreferrer">

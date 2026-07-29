@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ianhundere/ian.hunde.re"
+    "url": "git+https://github.com/ianhundere/ian.hunde.re.git"
   },
   "resolutions": {
     "react": "^19.2.7",
@@ -54,5 +54,7 @@
     "es5-ext@0.10.64": true,
     "@parcel/watcher@2.5.1": true,
     "fsevents@2.3.3": true
-  }
+  },
+  "homepage": "https://ian.hunde.re",
+  "private": true
 }

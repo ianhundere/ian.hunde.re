@@ -154,7 +154,7 @@ class Main extends React.Component {
                     <div align="center">
                         <a
                             href="https://grassnose.bandcamp.com/"
-                            alt="bandcamp link"
+                            aria-label="Bandcamp"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -163,7 +163,7 @@ class Main extends React.Component {
                         <strong>&nbsp;/&nbsp;</strong>{' '}
                         <a
                             href="https://soundcloud.com/grassnose"
-                            alt="soundcloud link"
+                            aria-label="SoundCloud"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -172,7 +172,7 @@ class Main extends React.Component {
                         <strong>&nbsp;/&nbsp;</strong>{' '}
                         <a
                             href="https://clyp.it/user/3b2ltmbv"
-                            alt="clyp.it link"
+                            aria-label="Clyp"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -344,13 +344,13 @@ class Main extends React.Component {
                         </ul>
                     </form>
                     {this.state.contactStatus === 'success' && (
-                        <p>
+                        <p role="status">
                             Thanks — your message is on its way. I'll get back
                             to you soon.
                         </p>
                     )}
                     {this.state.contactStatus === 'error' && (
-                        <p>
+                        <p role="status">
                             Hmm, that didn't send. Give it another try in a
                             minute, or find me on LinkedIn (link below).
                         </p>

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Ian Hundere",
-    description: "Ian Hundere's Portfolio"
+    description: "Ian Hundere's Portfolio",
+    siteUrl: "https://ian.hunde.re"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -10,6 +11,8 @@ module.exports = {
       options: {
         name: 'Ian Hundere — Portfolio',
         short_name: 'hunde.re',
+        description: "Ian Hundere's Portfolio",
+        lang: 'en',
         start_url: '/',
         background_color: '#1b1f22',
         theme_color: '#1b1f22',

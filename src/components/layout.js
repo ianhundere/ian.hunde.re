@@ -32,6 +32,8 @@ const Layout = ({ children, location }) => {
           site {
             siteMetadata {
               title
+              description
+              siteUrl
             }
           }
         }
@@ -41,11 +43,17 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: `description`, content: `Ian Hundere's Portfolio` },
+              { name: `description`, content: data.site.siteMetadata.description },
               { name: `keywords`, content: `Ian Hundere, Portfolio, Web Developer, Software Developer, Software Engineer` },
+              { property: `og:title`, content: data.site.siteMetadata.title },
+              { property: `og:description`, content: data.site.siteMetadata.description },
+              { property: `og:type`, content: `website` },
+              { property: `og:url`, content: data.site.siteMetadata.siteUrl },
+              { name: `twitter:card`, content: `summary` },
             ]}
           >
             <html lang="en" />
+            <link rel="canonical" href={data.site.siteMetadata.siteUrl} />
           </Helmet>
           {content}
         </>
