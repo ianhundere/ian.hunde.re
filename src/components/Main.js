@@ -288,10 +288,13 @@ class Main extends React.Component {
                 >
                     <h1 className="major">Contact</h1>
                     <p>
-                        I'm open to consulting and contract engagements in
-                        software supply-chain security and platform engineering.
-                        Tell me a bit about what you're working on and I'll get
-                        back to you.
+                        i'm open to consulting / contract work. background in
+                        cloud infrastructure and devops / these days focused on
+                        software supply-chain security (getting software to
+                        prove where it came from). if it touches how software
+                        gets built, shipped, or trusted, i'm interested. tell
+                        me a bit about what you're working on and i'll get back
+                        to you.
                     </p>
                     <form method="post" onSubmit={this.handleContactSubmit}>
                         <input
