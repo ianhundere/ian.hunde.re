@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "ian.hunde.re",
+  "description": "Ian Hundere's portfolio site",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Ian Hundere",
   "dependencies": {
     "@mdx-js/react": "^3.1.1",
     "eslint": "^10.4.1",
@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ianhundere/ian.hunde.re"
   },
   "resolutions": {
     "react": "^19.2.7",

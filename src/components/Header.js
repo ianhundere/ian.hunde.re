@@ -16,8 +16,9 @@ const Header = (props) => (
             <ul>
                 <li>
                     <a
-                        href="javascript:;"
-                        onClick={() => {
+                        href="#work"
+                        onClick={(e) => {
+                            e.preventDefault();
                             props.onOpenArticle('work');
                         }}
                     >
