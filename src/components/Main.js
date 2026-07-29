@@ -10,6 +10,39 @@ import studio from '../images/studio.jpg';
 import code from '../images/code.jpg';
 
 class Main extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { contactStatus: 'idle' };
+    }
+
+    handleContactSubmit = (e) => {
+        e.preventDefault();
+        const key = process.env.GATSBY_CONTACT_FORM_KEY;
+        if (!key) {
+            this.setState({ contactStatus: 'error' });
+            return;
+        }
+        const form = e.target;
+        const data = new FormData(form);
+        data.append('access_key', key);
+        this.setState({ contactStatus: 'sending' });
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: data,
+            headers: { Accept: 'application/json' },
+        })
+            .then((res) => res.json())
+            .then((json) => {
+                if (json.success) {
+                    form.reset();
+                    this.setState({ contactStatus: 'success' });
+                } else {
+                    this.setState({ contactStatus: 'error' });
+                }
+            })
+            .catch(() => this.setState({ contactStatus: 'error' }));
+    };
+
     render() {
         let close = (
             <div
@@ -245,6 +278,80 @@ class Main extends React.Component {
                             <em>github.com/ianhundere</em>
                         </a>
                     </div>
+                    {close}
+                </article>
+                <article
+                    id="contact"
+                    className={`${this.props.article === 'contact' ? 'active' : ''}
+                        ${this.props.articleTimeout ? 'timeout' : ''}`}
+                    style={{ display: 'none' }}
+                >
+                    <h1 className="major">Contact</h1>
+                    <p>
+                        I'm open to consulting and contract engagements in
+                        software supply-chain security and platform engineering.
+                        Tell me a bit about what you're working on and I'll get
+                        back to you.
+                    </p>
+                    <form method="post" onSubmit={this.handleContactSubmit}>
+                        <input
+                            type="checkbox"
+                            name="botcheck"
+                            tabIndex={-1}
+                            autoComplete="off"
+                            style={{ display: 'none' }}
+                        />
+                        <div className="field half first">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div className="field half">
+                            <label htmlFor="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                            />
+                        </div>
+                        <div className="field">
+                            <label htmlFor="message">Message</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                rows="4"
+                                required
+                            />
+                        </div>
+                        <ul className="actions">
+                            <li>
+                                <input
+                                    type="submit"
+                                    value={
+                                        this.state.contactStatus === 'sending'
+                                            ? 'Sending…'
+                                            : 'Send Message'
+                                    }
+                                    className="special"
+                                    disabled={
+                                        this.state.contactStatus === 'sending'
+                                    }
+                                />
+                            </li>
+                        </ul>
+                    </form>
+                    {this.state.contactStatus === 'success' && (
+                        <p>
+                            Thanks — your message is on its way. I'll get back
+                            to you soon.
+                        </p>
+                    )}
+                    {this.state.contactStatus === 'error' && (
+                        <p>
+                            Hmm, that didn't send. Give it another try in a
+                            minute, or find me on LinkedIn (link below).
+                        </p>
+                    )}
                     {close}
                 </article>
             </div>

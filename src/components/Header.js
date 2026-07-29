@@ -37,6 +37,17 @@ const Header = (props) => (
                     </a>
                 </li>
                 <li>
+                    <a
+                        href="#contact"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            props.onOpenArticle('contact');
+                        }}
+                    >
+                        Contact
+                    </a>
+                </li>
+                <li>
                     <a href={resume} target="_blank" rel="noopener noreferrer">
                         Resume
                     </a>
