@@ -223,12 +223,12 @@ class Main extends React.Component {
                     </ul>
                     <div align="right">
                         <a
-                            href="https://github.com/liatrio/autogov-workflows"
+                            href="https://github.com/search?q=author%3Aianhundere+is%3Apr+is%3Amerged&type=pullrequests"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <span className="icon fa-github" />{' '}
-                            <em>autogov-workflows</em>
+                            <em>all my contributions</em>
                         </a>
                     </div>
                     <hr />
