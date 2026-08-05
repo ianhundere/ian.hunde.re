@@ -91,22 +91,22 @@ class Main extends React.Component {
                         />
                     </section>
                     <p>
-                        Born and raised in Texas, I spent late nights installing
-                        whatever Linux distro was new that week and meeting
-                        strangers on IRC. I headed north for undergrad in
-                        Victoria, BC, where I picked up a BA in 20th Century
-                        American History (from a Canadian perspective,
-                        naturally). Back south, I landed at Apple in the summer
-                        of 2007 — right as every employee was handed a free
-                        iPhone — and stayed five years before going back to
-                        school for a master's in education.
+                        born and raised in texas / late nights spent
+                        installing whatever linux distro was new that week or
+                        meeting strangers on irc. headed north for undergrad in
+                        victoria, bc where i picked up a BA in 20th century
+                        american history (from a canadian perspective,
+                        naturally). came back south and landed at apple in the
+                        summer of 2007, right as every employee was getting a
+                        free iphone, and stayed five years before heading back
+                        to school for a master's in education.
                     </p>
                     <img className="image left" src={fam} alt="my family" />
                     <p>
-                        Right before graduating, I met my wife and other half;
-                        she's kept me sane ever since. We have two kids we do
-                        our best to keep curious, motivated, and occasionally on
-                        time.
+                        right before graduating, i met my wife + other half /
+                        she's kept me sane ever since. we have two kids we do
+                        our best to keep curious, motivated, and occasionally
+                        on time.
                     </p>
                     <img
                         className="image right"
@@ -114,9 +114,9 @@ class Main extends React.Component {
                         alt="screen of code"
                     />
                     <p>
-                        After a gratifying run in education — teaching 4th and
-                        5th graders, then coaching teachers as an academic
-                        technologist (
+                        after a gratifying run in education (taught 4th + 5th
+                        graders, then coached teachers as an academic
+                        technologist /{' '}
                         <a
                             href="https://www.youtube.com/watch?v=Uc2CcrMO1W8"
                             target="_blank"
@@ -124,21 +124,21 @@ class Main extends React.Component {
                         >
                             video portfolio
                         </a>
-                        ) — the tinkering itch won out, and around 2018 I
-                        retrained and made the leap into engineering. I've been
-                        doing DevOps and platform work ever since, and today I'm
-                        a Lead DevOps Engineer specializing in software
-                        supply-chain security, working remotely with Liatrio —
-                        helping teams prove where their software actually comes
-                        from. Lately that means designing private Sigstore
-                        stacks, getting builds to SLSA Build Level 3 with GitHub
-                        Artifact Attestations, writing a Go CLI that uses
-                        Sigstore and OPA policy to decide whether an artifact
-                        gets to ship, and contributing to the open source
-                        projects (cosign, rekor, fulcio) that make it work.
-                        Honestly, the teaching never stopped — mentoring
-                        engineers is my favorite part of the job. That, and
-                        getting software to show its work.
+                        ), the tinkering itch won out and around 2018 i made
+                        the leap into engineering. been doing devops + platform
+                        work ever since / these days i'm a lead devops engineer
+                        specializing in software supply-chain security, working
+                        remotely w/ liatrio, helping teams prove where their
+                        software actually comes from. lately that means
+                        designing private sigstore stacks, getting builds to
+                        SLSA build level 3 w/ github artifact attestations,
+                        writing a go cli that uses sigstore + OPA policy to
+                        decide whether an artifact gets to ship, and
+                        contributing to the open source projects (cosign,
+                        rekor, fulcio) that make it work. honestly, the
+                        teaching never stopped / mentoring engineers is my
+                        favorite part of the job. that, and getting software to
+                        show its work.
                     </p>
                     <img
                         className="image left"
@@ -152,10 +152,10 @@ class Main extends React.Component {
                         alt="music studio"
                     />
                     <p>
-                        When I'm not tinkering at work or with my family, I'm
-                        out on a long bike ride or up too late making video game
-                        sounds. If you want proof of the latter, my bleeps and
-                        bloops are below.
+                        when i'm not tinkering at work or w/ my family, i'm
+                        out on a long bike ride or up too late making video
+                        game sounds. if you want proof of the latter, my bleeps
+                        + bloops are below.
                     </p>
                     <div align="center">
                         <a
@@ -196,16 +196,17 @@ class Main extends React.Component {
                     <h1 className="major">Work</h1>
                     <h2 align="center">Industry</h2>
                     <p>
-                        My day job centers on autogov, the automated governance
-                        system we build at Liatrio: artifacts ship with SLSA
-                        Build Level 3 provenance through GitHub Artifact
-                        Attestations, and a Go CLI verifies those attestations
-                        (provenance, SBOMs, verification summaries) against OPA
-                        policy before anything is allowed to deploy. Along the
-                        way I've contributed across the Sigstore ecosystem
-                        (cosign, rekor, fulcio, timestamp-authority).
+                        my day job centers on autogov, the automated
+                        governance system we build at liatrio: artifacts ship
+                        w/ SLSA build level 3 provenance through github
+                        artifact attestations, and a go cli verifies those
+                        attestations (provenance, SBOMs, verification
+                        summaries) against OPA policy before anything is
+                        allowed to deploy. along the way i've contributed
+                        across the sigstore ecosystem (cosign, rekor, fulcio,
+                        timestamp-authority).
                     </p>
-                    <h3>Focus Areas</h3>
+                    <h3>focus areas</h3>
                     <ul>
                         <li>
                             software supply-chain security / automated
@@ -725,20 +726,20 @@ class Main extends React.Component {
                     </form>
                     {this.state.contactStatus === 'success' && (
                         <p role="status">
-                            Thanks — your message is on its way. I'll get back
-                            to you soon.
+                            thanks / your message is on its way. i'll get
+                            back to you soon.
                         </p>
                     )}
                     {this.state.contactStatus === 'error' && (
                         <p role="status">
-                            Hmm, that didn't send. Give it another try in a
+                            hmm, that didn't send. give it another try in a
                             minute, or find me on{' '}
                             <a
                                 href="https://www.linkedin.com/in/ianhundere/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                LinkedIn
+                                linkedin
                             </a>
                             .
                         </p>

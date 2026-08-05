@@ -44,7 +44,7 @@ const Layout = ({ children, location }) => {
             title={data.site.siteMetadata.title}
             meta={[
               { name: `description`, content: data.site.siteMetadata.description },
-              { name: `keywords`, content: `Ian Hundere, DevOps, SRE, Platform Engineer, Software Supply-Chain Security, Sigstore, SLSA, Cloud Infrastructure, Portfolio` },
+              { name: `keywords`, content: `ian hundere, devops, sre, platform engineer, software supply-chain security, sigstore, slsa, cloud infrastructure, portfolio` },
               { property: `og:title`, content: data.site.siteMetadata.title },
               { property: `og:description`, content: data.site.siteMetadata.description },
               { property: `og:type`, content: `website` },

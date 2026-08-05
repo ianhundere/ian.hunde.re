@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Ian Hundere",
-    description: "Ian Hundere / Lead DevOps Engineer specializing in software supply-chain security / cloud infrastructure + devops",
+    description: "ian hundere / lead devops engineer specializing in software supply-chain security / cloud infrastructure + devops",
     siteUrl: "https://ian.hunde.re"
   },
   plugins: [
@@ -9,9 +9,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Ian Hundere — Portfolio',
+        name: 'ian hundere / portfolio',
         short_name: 'hunde.re',
-        description: "Ian Hundere / Lead DevOps Engineer specializing in software supply-chain security / cloud infrastructure + devops",
+        description: "ian hundere / lead devops engineer specializing in software supply-chain security / cloud infrastructure + devops",
         lang: 'en',
         start_url: '/',
         background_color: '#1b1f22',
