@@ -196,8 +196,10 @@ class Main extends React.Component {
                     <h1 className="major">Work</h1>
                     <h2 align="center">Industry</h2>
                     <p>
-                        my day job centers on autogov, the automated
-                        governance system we build at liatrio: artifacts ship
+                        my day job is devops / platform / cloud infra work
+                        w/ liatrio. lately a good chunk of that has been
+                        autogov, the automated governance system we build
+                        there: artifacts ship
                         w/ SLSA build level 3 provenance through github
                         artifact attestations, and a go cli verifies those
                         attestations (provenance, SBOMs, verification
@@ -215,7 +217,8 @@ class Main extends React.Component {
                         <li>ai enablement / agentic workflows for engineering teams</li>
                         <li>
                             app modernization / CI/CD, containers, platform and
-                            cloud infrastructure
+                            cloud infrastructure / honestly anything infra +
+                            devops + sre for sure.
                         </li>
                     </ul>
                     <div align="right">
