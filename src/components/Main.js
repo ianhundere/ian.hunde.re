@@ -205,8 +205,39 @@ class Main extends React.Component {
                         attestations (provenance, SBOMs, verification
                         summaries) against OPA policy before anything is
                         allowed to deploy. along the way i've contributed
-                        across the sigstore ecosystem (cosign, rekor, fulcio,
-                        timestamp-authority).
+                        across the sigstore ecosystem (
+                        <a
+                            href="https://github.com/sigstore/cosign/pulls?q=is%3Apr+author%3Aianhundere+is%3Amerged"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            cosign
+                        </a>
+                        ,{' '}
+                        <a
+                            href="https://github.com/sigstore/rekor/pulls?q=is%3Apr+author%3Aianhundere+is%3Amerged"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            rekor
+                        </a>
+                        ,{' '}
+                        <a
+                            href="https://github.com/sigstore/fulcio/pulls?q=is%3Apr+author%3Aianhundere+is%3Amerged"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            fulcio
+                        </a>
+                        ,{' '}
+                        <a
+                            href="https://github.com/sigstore/timestamp-authority/pulls?q=is%3Apr+author%3Aianhundere+is%3Amerged"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            timestamp-authority
+                        </a>
+                        ).
                     </p>
                     <h3>focus areas</h3>
                     <ul>
